@@ -19,7 +19,18 @@
 
         <!--questions section-->
         <section id="questions-container">
-            <div id="questions">
+            <div id = "quiz-info">
+                <p>In this quick quiz you are going to learn some fun facts about islam.
+                    But first, let's go over some rules.</p>
+                <ul>
+                    <li>The quiz consists of 10 questions with 3 answer options to choose from.</li>
+                    <li>Only one answer is correct</li>
+                    <li>You can't exit the quiz while you are playing.</li>
+                    <li>When the quiz is finished, you'll get your total score.</li>
+                    <li>You can repeat the quiz more than once.</li>
+                </ul>
+            </div>
+            <div id="quiz-questions">
                 <p id="ques-number"></p>
                 <p id="option1"></p>
                 <p id="option2"></p>
@@ -33,9 +44,10 @@
         <section id="box">
             <div id="start-quiz">Start Quiz</div>
             <div id="again-quiz">Play again</div>
-            <div class="score-area">
-                <p class="scores">Correct Answers <span id="score">0</span></p>
-                <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+            <div id="total-score">Total score</div>
+            <div id="score-area">
+                <p class="scores">Correct Answers: <span id="score">0</span></p>
+                <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
             </div>
 
         </section>
