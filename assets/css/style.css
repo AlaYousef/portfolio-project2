@@ -24,25 +24,28 @@ header{
     border-radius: 7px;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-weight: normal;
 }
 #box{
     text-align: center;
+    width: 50vw;
 }
 #start-quiz{
     padding: 0 10px 0 10px;
     font-size: 25px;
-    background-color: #f6c64c;
+    background-color: #e3b433;
     color: #fff;
     border-radius: 7px;
     cursor: pointer;
+    width: 50vw;
     
 }
 #again-quiz{
     
     padding: 0 10px 0 10px;
     font-size: 25px;
-    
-    background-color: #f6c64c;
+    display: none;
+    background-color: #e3b433;
     color: #fff;
     border-radius: 7px;
     cursor: pointer;
@@ -52,8 +55,8 @@ header{
     
     padding: 0 10px 0 10px;
     font-size: 25px;
-    
-    background-color: #f6c64c;
+    display:none;
+    background-color: #e3b433;
     color: #fff;
     border-radius: 7px;
     cursor: pointer;
@@ -65,4 +68,28 @@ header{
 .scores{
     padding: 10px;
     
+}
+
+/* --------- Media queries */
+
+@media (max-width: 850px) {
+    #box{
+        width:inherit;
+        
+    }
+    #score-area{
+        margin-top: 30px;
+        display: block;
+        
+    }
+    .scores{
+        margin: 1px;
+        
+    }
+
+   
+}
+
+@media (max-width: 550px) {
+   
 }
