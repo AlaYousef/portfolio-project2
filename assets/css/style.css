@@ -96,12 +96,32 @@ header{
         align-items: center;
         margin: 0 auto;
         overflow:scroll;
+        padding: 0 5px 0 5px;
+        font-size: smaller;
+        margin-top: 30px;
     }
     
     #start-quiz{
         width:90%;
         margin: 0 auto;
         margin-top: 30px;
+    }
+    
+    #again-quiz{
+        width:90%;
+        margin: 0 auto;
+        margin-top: 30px;
+        
+    }
+    #total-score{
+        width:90%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .scores{
+       font-size: medium;
+      
+        
     }
     
 }
