@@ -70,15 +70,132 @@ header{
     
 }
 
+/*contact page style*/
+#contact-section{
+   
+    width: 100%;
+    overflow: hidden;
+    display: block;
+   
+}
+/*form cover content style*/
+#cover-contact{
+   
+    width: 80vw;
+    font-size: 150%;
+    background-color: #e3b433;
+    border-radius: 7px;
+
+
+}
+#heading{
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    
+}
+
+
+
+#form-div{
+    width: 100%;
+
+    display:inline-block;
+    text-align: center;
+    padding: 10px;
+    
+    
+}
+#form-div label{
+    font-size: 70%;
+}
+#inputs-fieldset{
+    
+    height: auto;
+    float: left;
+    width: 45%;
+   
+    
+}
+#textarea-fieldset{
+      
+    height: 350px;
+    float: left;
+    width: 50%;
+    
+}
+.contact-input {
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+    
+    box-shadow: 0 8px 16px 0 rgba(4, 33, 95, 0.2), 0 6px 20px 0 rgba(6, 7, 96, 0.19);
+    
+}
+.margin-contact-input{
+    margin-top: 3px;
+}
+
+textarea {
+    width: 90%;
+    border-radius: 10px;
+    height: 85%;
+    box-shadow: 0 8px 16px 0 rgba(4, 33, 95, 0.2), 0 6px 20px 0 rgba(6, 7, 96, 0.19);
+    
+}
+#div-button{
+ 
+    width: 100%;
+    height:auto ;
+    text-align:center;
+    display: inline-block;
+ 
+    
+}
+button {
+    width: 10%;
+   
+    
+    padding: 10px 32px;
+   
+    background-color:white;
+    color:rgb(2, 53, 66);
+    border-radius: 10px;
+    border: 2px solid rgb(2, 53, 66);;
+        
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    
+    
+    cursor: pointer;
+   
+  }
+  button:hover {
+    box-shadow: 0 8px 16px 0 rgba(4, 33, 95, 0.2), 0 6px 20px 0 rgba(6, 7, 96, 0.19);
+    background-color:rgb(2, 53, 66);
+    color: white;
+    border: 2px solid white;
+  }
+
+  
 /* --------- Media queries */
 
 @media (max-width: 850px) {
+    #questions-container {
+        
+        overflow: scroll;
+    }
     #box{
         width:inherit;
         
     }
     #score-area{
-        margin-top: 30px;
+        margin-top: 20px;
         display: block;
         
     }
@@ -99,6 +216,7 @@ header{
         padding: 0 5px 0 5px;
         font-size: smaller;
         margin-top: 30px;
+        overflow: scroll;
     }
     
     #start-quiz{
