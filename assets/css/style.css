@@ -81,8 +81,9 @@ header{
 /*form cover content style*/
 #cover-contact{
    
-    width: 80vw;
-    font-size: 150%;
+    width: 70vw;
+    height: 80vh;
+    font-size: 100%;
     background-color: #e3b433;
     border-radius: 7px;
 
@@ -91,62 +92,66 @@ header{
 #heading{
     text-align: center;
     display: block;
-    padding-top: 10px;
-    
-    margin-left: 10%;
-    margin-right: 10%;
-    
-    
+    padding-top: 5px;
+    margin: 0 auto;
+    line-height: .5;
+
+}
+#heading p{
+ font-size: smaller;
+ font-weight: normal;
+ margin-top: 0px;
 }
 
 
 
 #form-div{
     width: 100%;
-
     display:inline-block;
-    text-align: center;
+   
     padding: 10px;
     
     
 }
 #form-div label{
     font-size: 70%;
+    font-weight: normal;
+    text-align: left;
 }
 #inputs-fieldset{
     
     height: auto;
     float: left;
     width: 45%;
+    margin: 10px;
+  
    
     
 }
 #textarea-fieldset{
-      
-    height: 350px;
+    
+    height: auto;
     float: left;
     width: 50%;
+    margin: 10px;
     
 }
 .contact-input {
     width: 90%;
-    height: 35px;
-    border-radius: 10px;
-    
-    box-shadow: 0 8px 16px 0 rgba(4, 33, 95, 0.2), 0 6px 20px 0 rgba(6, 7, 96, 0.19);
-    
-}
-.margin-contact-input{
-    margin-top: 3px;
+    height: 30px;
+    border-radius: 7px ;
+    border: 2px solid  #4a0e60;
+    box-shadow: 2px 2px 4px #a79999;
 }
 
 textarea {
     width: 90%;
-    border-radius: 10px;
-    height: 85%;
-    box-shadow: 0 8px 16px 0 rgba(4, 33, 95, 0.2), 0 6px 20px 0 rgba(6, 7, 96, 0.19);
-    
+    height: 220px;;
+    border-radius: 7px ;
+    border: 2px solid  #4a0e60;
+    box-shadow: 2px 2px 4px #a79999;
 }
+
 #div-button{
  
     width: 100%;
@@ -157,27 +162,24 @@ textarea {
     
 }
 button {
-    width: 10%;
-   
-    
+    width: 30%;
     padding: 10px 32px;
-   
+    align-items: center;
     background-color:white;
-    color:rgb(2, 53, 66);
-    border-radius: 10px;
-    border: 2px solid rgb(2, 53, 66);;
+    color: #4a0e60;
+    border-radius: 7px;
+    border: 2px solid  #4a0e60;
+    box-shadow: 2px 2px 4px #a79999;
         
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-    
-    
     cursor: pointer;
    
   }
   button:hover {
     box-shadow: 0 8px 16px 0 rgba(4, 33, 95, 0.2), 0 6px 20px 0 rgba(6, 7, 96, 0.19);
-    background-color:rgb(2, 53, 66);
+    background-color: #4a0e60;
     color: white;
     border: 2px solid white;
   }
