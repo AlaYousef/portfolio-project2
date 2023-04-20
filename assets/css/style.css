@@ -187,6 +187,33 @@ button {
   
 /* --------- Media queries */
 
+@media (max-width: 1600px) {
+    #cover-contact{
+   
+        height: 50vh;
+       
+    
+    }
+}
+@media (max-width: 1200px) {
+    #contact-section{
+        height: 50vh;
+        display: inline;
+     }
+     #form-div{
+        height: 50vh;
+        width: 100%;
+        display: inline;
+     }
+
+    #cover-contact{
+       height: fit-content;
+       
+       
+     }
+
+    }
+
 @media (max-width: 850px) {
     #questions-container {
         
