@@ -82,7 +82,7 @@ header{
 #cover-contact{
    
     width: 70vw;
-    height: 80vh;
+   height: 100%;
     font-size: 100%;
     background-color: #e3b433;
     border-radius: 7px;
@@ -187,32 +187,13 @@ button {
   
 /* --------- Media queries */
 
-@media (max-width: 1600px) {
-    #cover-contact{
-   
-        height: 50vh;
-       
+
+@media (max-width: 1200px){
     
-    }
+#textarea-fieldset {
+    width: 50%;
 }
-@media (max-width: 1200px) {
-    #contact-section{
-        height: 50vh;
-        display: inline;
-     }
-     #form-div{
-        height: 50vh;
-        width: 100%;
-        display: inline;
-     }
-
-    #cover-contact{
-       height: fit-content;
-       
-       
-     }
-
-    }
+}
 
 @media (max-width: 850px) {
     #questions-container {
@@ -232,8 +213,29 @@ button {
         margin: 1px;
         
     }
-
-   
+    /*contact page responsive style*/
+    #cover-contact {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    #inputs-fieldset{
+        width:50%;
+       display: inline-block;
+       margin: 0px;
+      
+       
+        
+    }
+    #textarea-fieldset{
+        width: 50%;
+        display: inline-block;
+        margin: 0px;
+        float: right;
+       
+    }
+    
+       
 }
 
 @media (max-width: 550px) {
@@ -269,6 +271,20 @@ button {
        font-size: medium;
       
         
+    }
+
+
+    #inputs-fieldset{
+        width:100%;
+       display: block;
+      
+       
+        
+    }
+    #textarea-fieldset{
+        width: 100%;
+        display: block;
+       
     }
     
 }
