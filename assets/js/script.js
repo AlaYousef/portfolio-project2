@@ -3,11 +3,11 @@
  */
 let myQuestions = [
     {
-        question: '1. The word "Al-Yaom" (day) is mentioned in the Quran..',
+        question: '1.Who has been sent as a mercy to the worlds?',
         options: [
-            {option: '1000 times', answer: false},
-            {option: '365 times', answer: true},
-            {option: '500 times', answer: false}
+            {option: 'Prophet Jesus (PBUH)', answer: false},
+            {option: 'Prophet Muhammad (PBUH)', answer: true},
+            {option: 'Prophet Moses (PBUH)', answer: false}
         ],
     },       
     {
@@ -88,17 +88,54 @@ let myQuestions = [
  */
 let start = document.getElementById('start-quiz');
 let quizQuestion = document.getElementById('question-number');
-
 let quizOption = document.getElementsByClassName('option-number');
-let quizDetails = document.getElementById('quiz-info');
+let quizInfo = document.getElementById('quiz-info');
+let quiz = document.getElementById('quiz-questions');
+
+let nextPrevious = document.getElementById('next-previous');
+
 
 start.addEventListener('click',startQuiz);
+
+/* 
+ * hide quiz and result area when window is loaded and 
+ * display the score-area
+ */
+window.onload = function startPage() {
+   
+    quiz.style.display ='none';
+    nextPrevious.style.display ='none';
+    
+
+};
+
+
 function startQuiz(){
+    quizInfo.style.display = 'none';
+    quiz.style.display = 'contents';
+    start.style.display = 'none';
+    nextPrevious.style.display ='contents';
+    
 
-    quizDetails.innerHTML = "sdfdghhjkljjjjjjo";
+    quizQuestion.innerHTML = myQuestions[0].question;
+    
+
+
     
 
     
+}
+
+/**
+ * function that disable options when one is clicked
+ */
+function disable() {
+
+    document.getElementById('option1').style.pointerEvents = 'none';
+    document.getElementById('option2').style.pointerEvents = 'none';
+    document.getElementById('option3').style.pointerEvents = 'none';
+    document.getElementById('option4').style.pointerEvents = 'none';
+
 }
 /**
  * contact us page 

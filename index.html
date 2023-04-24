@@ -30,19 +30,22 @@
                     <li>You can repeat the quiz more than once.</li>
                 </ul>
             </div>
-            <div id="quiz-questions" style="display: none;">
-                <p id="question-number">1. The word "Al-Yaom" (day) is mentioned in the Quran..</p>
-                <p id="option1" class="option-number">1000 ghfhj</p>
-                <p id="option2" class ="option-number">jhfg</p>
-                <p id="option3" class="option-number">gkjhirt</p>
-
+            <div id="quiz-questions">
+                <p id="question-number">1. 1.Who has been sent as a mercy to the worlds?</p>
+                <p id="option1" class="option-number" style="cursor: pointer;" onclick="disable()">Prophet Jesus (PBUH)</p>
+                <p id="option2" class ="option-number" style="cursor: pointer;" onclick="disable()">Prophet Muhammad (PBUH)</p>
+                <p id="option3" class="option-number" style="cursor: pointer;" onclick="disable()">Prophet Moses (PBUH)</p>
+                <p id="option4" class="option-number" style="cursor: pointer;" onclick="disable()">Prophet Abraham (PBUH)</p>
 
             </div>
 
         </section>
 
         <section id="box">
-            <div id="start-quiz" class="box-area">Start Quiz</div>
+            <div id="start-quiz" class="box-area" onclick="startQuiz()">Start Quiz</div>
+            <div id="next-previous" >
+                <p> <span class="sides"> Previous</span> <span class="sides">Next</span> </p>
+            </div>
             <div id="again-quiz" class="box-area">Play again</div>
             <div id="total-score" class="box-area">Total score</div>
             <div id="score-area" >
