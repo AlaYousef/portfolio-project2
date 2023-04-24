@@ -78,11 +78,11 @@ header{
     display: inline;
 
 }
-#again-quiz{
+#again-quiz p{
     
     padding: 0 10px 0 10px;
     font-size: 25px;
-    background-color: e3b433;
+    background-color: #e3b433;
     color: #fff;
     border-radius: 7px;
     cursor: pointer;

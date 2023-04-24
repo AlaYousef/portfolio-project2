@@ -173,12 +173,14 @@ function displayQuestion(){
     currentQuestion++;
    
     if(currentQuestion === 10){
-       
+          
         quiz.style.display = 'none';
         nextPrevious.style.display = 'none';
+        
         playAgain.style.display = 'contents';
         result.style.display ='contents';
-               
+             
+      
     }
 
 }
