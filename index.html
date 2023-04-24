@@ -38,16 +38,19 @@
                 <p id="option4" class="option-number" style="cursor: pointer;" onclick="disable()">option4</p>
 
             </div>
+            <div id="result">
+                <p>You have finished the quiz and your score is <span id="total-score"></span> out of 10</p>
+            </div>
 
         </section>
 
         <section id="box">
             <div id="start-quiz" class="box-area" onclick="startQuiz()">Start Quiz</div>
-            <div id="next-previous" >
-                <p> <span class="sides" id="previous"> Previous</span> <span class="sides" id ="next">Next</span> </p>
+            <div id="next-previous" class="box-area" onclick="displayQuestion()">
+                <p> <span class="sides" id="previous" style = "display: none;"> Previous</span> <span class="sides" id ="next">Next</span> </p>
             </div>
-            <div id="again-quiz" class="box-area">Play again</div>
-            <div id="total-score" class="box-area">Total score</div>
+            <div id="again-quiz" class="box-area">Play Again</div>
+           
             <div id="score-area" >
                 <p class="scores">Correct Answers: <span id="score">0</span></p>
                 <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>

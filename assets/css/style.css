@@ -69,6 +69,7 @@ header{
     border-radius: 7px;
     cursor: pointer;
     width: 50vw;
+
   
     
 }
@@ -81,22 +82,22 @@ header{
     
     padding: 0 10px 0 10px;
     font-size: 25px;
-    display: none;
-    background-color: #e3b433;
+    background-color: e3b433;
     color: #fff;
     border-radius: 7px;
     cursor: pointer;
+    width: 50vw;
     
 }
 #total-score{
     
     padding: 0 10px 0 10px;
     font-size: 25px;
-    display:none;
     background-color: #e3b433;
     color: #fff;
     border-radius: 7px;
     cursor: pointer;
+    width: 50vw;
 }
 #score-area{
     display: -webkit-inline-box;

@@ -105,6 +105,8 @@ let quiz = document.getElementById('quiz-questions');
 let next = document.getElementById('next');
 let previous = document.getElementById('previuos');
 let totalScore = document.getElementById('total-score');
+let playAgain = document.getElementById('again-quiz');
+let result = document.getElementById('result');
 let score;
 let currentQuestion;
 
@@ -113,6 +115,7 @@ let nextPrevious = document.getElementById('next-previous');
 
 start.addEventListener('click', startQuiz);
 next.addEventListener('click', displayQuestion);
+playAgain.addEventListener('click', playAgainFunction);
 
 /* 
  * hide quiz and result area when window is loaded and 
@@ -122,6 +125,10 @@ window.onload = function startPage() {
    
     quiz.style.display ='none';
     nextPrevious.style.display ='none';
+    totalScore.style.display = 'none';
+    playAgain.style.display = 'none';
+    result.style.display = 'none';
+
     
 
 };
@@ -153,8 +160,6 @@ function displayQuestion1(){
 }
 
 function displayQuestion(){
-    console.log(currentQuestion);
-    console.log(myQuestions[1]);
    
     for(let i = 1; i <= currentQuestion ;i++){
         quizQuestion.innerHTML = myQuestions[i].question;
@@ -166,13 +171,20 @@ function displayQuestion(){
        
     }
     currentQuestion++;
+   
     if(currentQuestion === 10){
-        next.style.display = 'none';
-
-        totalScore.style.display = 'contents';
-        
+       
+        quiz.style.display = 'none';
+        nextPrevious.style.display = 'none';
+        playAgain.style.display = 'contents';
+        result.style.display ='contents';
+               
     }
 
+}
+function playAgainFunction(){
+  
+    window.location.assign("index.html");
 }
 /**
  * function to go to next question and at end of game, displays the result area
