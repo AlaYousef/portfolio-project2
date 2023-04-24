@@ -104,6 +104,9 @@ let quizInfo = document.getElementById('quiz-info');
 let quiz = document.getElementById('quiz-questions');
 let next = document.getElementById('next');
 let previous = document.getElementById('previuos');
+let totalScore = document.getElementById('total-score');
+let score;
+let currentQuestion;
 
 let nextPrevious = document.getElementById('next-previous');
 
@@ -129,6 +132,9 @@ function startQuiz(){
     quiz.style.display = 'contents';
     start.style.display = 'none';
     nextPrevious.style.display ='contents';
+    currentQuestion = 0;
+    score = 0;
+
    
 displayQuestion1();
  
@@ -141,30 +147,38 @@ function displayQuestion1(){
         let btn = quizOption[i];
         btn.innerHTML = myQuestions[0].options[i].option;
     }
+    currentQuestion = 1;
 
 
 }
 
-let currentQuestion = 0;
 function displayQuestion(){
-    for(let i = 1; i < myQuestions.length ;i++){
+    console.log(currentQuestion);
+    console.log(myQuestions[1]);
+   
+    for(let i = 1; i <= currentQuestion ;i++){
         quizQuestion.innerHTML = myQuestions[i].question;
        
         for (let j = 0; j < 3; j++) {
             let btn = quizOption[j];
             btn.innerHTML = myQuestions[i].options[j].option;
         }
-         currentQuestion = i;
-        nextQuestion(i);
-        console.log(i);
+       
     }
-    
+    currentQuestion++;
+    if(currentQuestion === 10){
+        next.style.display = 'none';
+
+        totalScore.style.display = 'contents';
+        
+    }
 
 }
 /**
  * function to go to next question and at end of game, displays the result area
  * and play again-button
  */
+/*
 function nextQuestion(currentQuestion) {
 
     if (currentQuestion < 9) {
@@ -172,10 +186,10 @@ function nextQuestion(currentQuestion) {
         displayQuestion(currentQuestion);
     } else {
         //hides and shows the right content to page when game is finished
-       
+       next.style.display = 'none';
     }
 
-}
+}*/
 /**
  * function that disable options when one is clicked
  */
