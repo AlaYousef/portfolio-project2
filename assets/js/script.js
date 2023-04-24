@@ -5,33 +5,37 @@ let myQuestions = [
     {
         question: '1.Who has been sent as a mercy to the worlds?',
         options: [
-            {option: 'Prophet Jesus (PBUH)', answer: false},
-            {option: 'Prophet Muhammad (PBUH)', answer: true},
-            {option: 'Prophet Moses (PBUH)', answer: false}
+            {option: 'Prophet Jesus (PBUH)', answer: true},
+            {option: 'Prophet Muhammad (PBUH)', answer: false},
+            {option: 'Prophet Moses (PBUH)', answer: false},
+            {option: 'Prophet Abraham (PBUH)', answer: false}
         ],
     },       
     {
-        question: '2. The word "Shahr" (month) is mentioned in the Quran..',
+        question: '2. Who has Allah mentioned in the Quran as the best example to follow?',
         options: [ 
-            {option: '33 times', answer: false},
-            {option: '99 times', answer: false},
-            {option: '12 times', answer: true}
+            {option: 'Prophet Muhammad (PBUH)', answer: true},
+            {option: 'Pharaoh', answer: false},
+            {option: 'Angels', answer: false},
+            {option: 'Jinn', answer: false}
         ],
     },
     {
-        question: '3. The correct stages of development of the embryo was first mentioned..',
+        question: '3. How many prophets are mentioned in the Quran?',
         options: [ 
-            {option: 'By Hans Adolf Eduard Driesch 1890', answer: false},
-            {option: 'In the Quran over 1400 years ago (surah: verses 23:12-14)', answer: true},
-            {option: 'By Frances Maitland Balfour 1880', answer: false}
+            {option: '29', answer: false},
+            {option: '25', answer: true},
+            {option: '27', answer: false},
+            {option: '26', answer: false}
         ],
     },
     {
-        question: '4. Allah mentions men and women in the Quran..',
+        question: '4. To which prophet did Allah directly speak to?',
         options: [
-            {option: 'Men more than women', answer: false},
-            {option: 'Women more than men', answer: false},
-            {option: 'Exactly equal', answer: true}
+            {option: 'Prophet Jesus (PBUH)', answer: false},
+            {option: 'Prophet Abraham (PBUH)', answer: false},
+            {option: 'Prophet Moses (PBUH)', answer: true},
+            {option: 'Prophet David (PBUH)', answer: false}
         ],
     },
     {
@@ -39,47 +43,54 @@ let myQuestions = [
         options: [
             {option: 'By Edwin Hubble 1929', answer: false},
             {option: 'By Georges Lemaître 1920', answer: false},
+            {option: 'In the Quran over 1400 years ago (surah:verse 51:47)', answer: true},
             {option: 'In the Quran over 1400 years ago (surah:verse 51:47)', answer: true}
         ],
     },
     {
-        question: '6. The word "Islam" means..',
+        question: '6. To which prophet did Allah order to build an ark?',
         options: [
-            {option: 'One who willfully submits (to God)', answer: true},
-            {option: 'To strive', answer: false},
-            {option: 'Followers of Prophet Muhammad (ﷺ)', answer: false}
+            {option: 'Prophet Noah (PBUH)', answer: true},
+            {option: 'Prophet Abraham (PBUH)', answer: false},
+            {option: 'Followers of Prophet Muhammad (ﷺ)', answer: false},
+            {option: 'Prophet David (PBUH)', answer: false}
+           
         ],
     },
     {
-        question: '7. The word "Jihad" means..',
+        question: '7. Who is the last Messenger of Allah?',
         options: [
-            {option: 'Holy war', answer: false},
-            {option: 'To "struggle" or to "strive"', answer: true},
-            {option: 'Martyrdom', answer: false}
+            {option: 'Prophet Abraham (PBUH)', answer: false},
+            {option: 'Prophet Muhammad (PBUH)', answer: true},
+            {option: 'Prophet Moses (PBUH)', answer: false},
+            {option: 'Prophet Jesus (PBUH)', answer: false}
         ],
     },
     {
-        question: '8. Prophets is mentioned (by name) in the Quran..',
+        question: '8. What does the religion of Islam preach?',
         options: [
-            {option: '25', answer: true},
-            {option: '33', answer: false},
-            {option: '19', answer: false}
+            {option: 'Islam preaches the oneness of God, and that there is no God except Allah', answer: true},
+            {option: 'Islam does not preach anything', answer: false},
+            {option: 'Islam preaches Idolatry', answer: false},
+            {option: 'Islam preaches that there are many Gods', answer: false}
         ],
     },
     {
-        question: '9. The angel who will blow the horn to signal the Day of Judgement is..',
+        question: '9. What is the meaning of Islam?',
         options: [
-            {option: 'Izrafeel', answer: true},
-            {option: 'Mikaeel', answer: false},
-            {option: 'Jibreel', answer: false}
+            {option: 'Islam means peace acquired by submitting your will to Allah, the Exalted', answer: true},
+            {option: 'Islam means a new religion', answer: false},
+            {option: 'Islam means a religion only for Arabs', answer: false},
+            {option: 'There is no meaning of Islam', answer: false}
         ],
     },
     {
-        question: '10. A muslim should love (after Allah and His Messenger ﷺ )..',
+        question: '10. What is the calendar which Muslims use?',
         options: [
-            {option: 'His mother three times over, before his father', answer: true},
-            {option: 'His father three times over, before his mother', answer: false},
-            {option: 'His father and mother equally', answer: false}
+            {option: 'Gregorian Calendar', answer: false},
+            {option: 'Roman Calendar', answer: false},
+            {option: 'Hijrah', answer: true},
+            {option: 'Persian Calendar', answer: true}
         ],
     }];
 
@@ -91,11 +102,14 @@ let quizQuestion = document.getElementById('question-number');
 let quizOption = document.getElementsByClassName('option-number');
 let quizInfo = document.getElementById('quiz-info');
 let quiz = document.getElementById('quiz-questions');
+let next = document.getElementById('next');
+let previous = document.getElementById('previuos');
 
 let nextPrevious = document.getElementById('next-previous');
 
 
-start.addEventListener('click',startQuiz);
+start.addEventListener('click', startQuiz);
+next.addEventListener('click', displayQuestion);
 
 /* 
  * hide quiz and result area when window is loaded and 
@@ -115,17 +129,53 @@ function startQuiz(){
     quiz.style.display = 'contents';
     start.style.display = 'none';
     nextPrevious.style.display ='contents';
-    
-
-    quizQuestion.innerHTML = myQuestions[0].question;
-    
-
-
-    
-
+   
+displayQuestion1();
+ 
     
 }
+function displayQuestion1(){
+    quizQuestion.innerHTML = myQuestions[0].question;
+   
+     for (let i = 0; i < 3; i++) {
+        let btn = quizOption[i];
+        btn.innerHTML = myQuestions[0].options[i].option;
+    }
 
+
+}
+
+let currentQuestion = 0;
+function displayQuestion(){
+    for(let i = 1; i < myQuestions.length ;i++){
+        quizQuestion.innerHTML = myQuestions[i].question;
+       
+        for (let j = 0; j < 3; j++) {
+            let btn = quizOption[j];
+            btn.innerHTML = myQuestions[i].options[j].option;
+        }
+         currentQuestion = i;
+        nextQuestion(i);
+        console.log(i);
+    }
+    
+
+}
+/**
+ * function to go to next question and at end of game, displays the result area
+ * and play again-button
+ */
+function nextQuestion(currentQuestion) {
+
+    if (currentQuestion < 9) {
+        
+        displayQuestion(currentQuestion);
+    } else {
+        //hides and shows the right content to page when game is finished
+       
+    }
+
+}
 /**
  * function that disable options when one is clicked
  */
