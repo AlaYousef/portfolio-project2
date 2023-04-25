@@ -107,7 +107,9 @@ let previous = document.getElementById('previuos');
 let totalScore = document.getElementById('total-score');
 let playAgain = document.getElementById('again-quiz');
 let result = document.getElementById('result');
-let score;
+let score = document.getElementById('score');
+let correctAns = 0;
+let incorrect = 0;
 let currentQuestion;
 
 let nextPrevious = document.getElementById('next-previous');
@@ -116,6 +118,7 @@ let nextPrevious = document.getElementById('next-previous');
 start.addEventListener('click', startQuiz);
 next.addEventListener('click', displayQuestion);
 playAgain.addEventListener('click', playAgainFunction);
+currentQuestion = 0;
 
 /* 
  * hide quiz and result area when window is loaded and 
@@ -156,49 +159,101 @@ function displayQuestion1(){
 
 function displayQuestion(){
    
-    console.log(currentQuestion);
-    for(let i = 1; i < currentQuestion ;i++){
-        quizQuestion.innerHTML = myQuestions[currentQuestion].question;
-       console.log(quizQuestion.innerHTML);
+    for(let i = 1; i <= currentQuestion;i++){
+       
+        quizQuestion.innerHTML = myQuestions[i].question;
+        
         for (let j = 0; j < 4; j++) {
             let btn = quizOption[j];
             btn.innerHTML = myQuestions[i].options[j].option;
         }
        
     }
-    
-    while(currentQuestion !== 10){
-          
-        quiz.style.display = 'none';
-        nextPrevious.style.display = 'none';
-        playAgain.style.display = 'contents';
-        result.style.display ='contents';
-             
-        currentQuestion++;
+   
+    if(currentQuestion <= 10){
+        currentQuestion = currentQuestion + 1;
     }
+        
+    if(currentQuestion === 10){
+            console.log(currentQuestion);
+            console.log('dtfyguhjhkl');
+            quiz.style.display = 'none';
+            nextPrevious.style.display = 'none';
+            playAgain.style.display = 'contents';
+            result.style.display ='contents';
+    }
+     
     
+    enableOptions();
+    
+              
 
 }
 function playAgainFunction(){
   
     window.location.assign("index.html");
 }
+
+/**
+ * function to check if user has clicked the true/false option
+ */
+const choices = document.querySelectorAll('.option-number');
+choices.forEach(choice => choice.addEventListener('click', checkAnswer));
+
+function checkAnswer() {
+    
+    console.log('dxfghkjklö');
+    console.log(currentQuestion);
+    let correctAnswer = myQuestions[currentQuestion].options.find(element => element.answer === true);
+        //checks if answer is true or false as well as updating score
+        console.log(currentQuestion);
+        if (correctAnswer.option === this.innerText){
+            console.log('qwertyuiopå' + currentQuestion);
+            incrementScore();
+            //add class if correct
+            console.log('checked');
+            this.classList.add('correct');
+        } else {
+            //add class if incorrect
+            this.classList.add('incorrect');
+        }
+    
+    console.log(correctAnswer);
+    
+}
+
+/**
+ * function to enable answer options when next question is comming
+ */
+function enableOptions(){
+
+    document.getElementById('option1').style.pointerEvents = 'all';
+    document.getElementById('option2').style.pointerEvents = 'all';
+    document.getElementById('option3').style.pointerEvents = 'all';
+    document.getElementById('option4').style.pointerEvents = 'all';
+   
+}
+
+/**
+ * increment score both current and at the end of result page
+ */
+function incrementScore() {
+
+    let oldScore = document.getElementById("score").innerText;
+    document.getElementById("score").innerText = ++oldScore;
+
+    
+
+}
 /**
  * function to go to next question and at end of game, displays the result area
  * and play again-button
  */
-/*
+
 function nextQuestion(currentQuestion) {
 
-    if (currentQuestion < 9) {
-        
-        displayQuestion(currentQuestion);
-    } else {
-        //hides and shows the right content to page when game is finished
-       next.style.display = 'none';
-    }
-
-}*/
+    
+}
 /**
  * function that disable options when one is clicked
  */
