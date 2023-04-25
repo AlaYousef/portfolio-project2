@@ -163,10 +163,22 @@ function displayQuestion(){
        
         quizQuestion.innerHTML = myQuestions[i].question;
         
+        
         for (let j = 0; j < 4; j++) {
             let btn = quizOption[j];
             btn.innerHTML = myQuestions[i].options[j].option;
+             //remove class when next question displays
+
+            if (btn.classList.contains('incorrect')) {
+                btn.classList.remove('incorrect');
+            }
+
+            if (btn.classList.contains('correct')) {
+                btn.classList.remove('correct');
+            }
         }
+        
+    enableOptions();
        
     }
    
@@ -184,8 +196,6 @@ function displayQuestion(){
     }
      
     
-    enableOptions();
-    
               
 
 }
@@ -201,18 +211,17 @@ const choices = document.querySelectorAll('.option-number');
 choices.forEach(choice => choice.addEventListener('click', checkAnswer));
 
 function checkAnswer() {
-    
-    console.log('dxfghkjklö');
-    console.log(currentQuestion);
-    let correctAnswer = myQuestions[currentQuestion].options.find(element => element.answer === true);
+
+    let correctAnswer = myQuestions[currentQuestion-1].options.find(element => element.answer === true);
         //checks if answer is true or false as well as updating score
         console.log(currentQuestion);
+        console.log(correctAnswer.option);
+        console.log(this.innerText);
         if (correctAnswer.option === this.innerText){
-            console.log('qwertyuiopå' + currentQuestion);
             incrementScore();
             //add class if correct
-            console.log('checked');
             this.classList.add('correct');
+            
         } else {
             //add class if incorrect
             this.classList.add('incorrect');
@@ -241,6 +250,8 @@ function incrementScore() {
 
     let oldScore = document.getElementById("score").innerText;
     document.getElementById("score").innerText = ++oldScore;
+
+   document.getElementById("total-score").innerText =  document.getElementById("score").innerText;
 
     
 

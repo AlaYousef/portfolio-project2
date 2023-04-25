@@ -117,6 +117,17 @@ header{
     display: block;
    
 }
+
+/* style for correct and incorrect answer */
+.correct {
+    background-color: #80f374;
+    color: #fff;
+}
+
+.incorrect {
+    background-color: #ff8066;
+    color: #fff;
+}
 /*form cover content style*/
 #cover-contact{
    
