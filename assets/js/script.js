@@ -128,16 +128,13 @@ window.onload = function startPage() {
     totalScore.style.display = 'none';
     playAgain.style.display = 'none';
     result.style.display = 'none';
-
-    
-
 };
 
 
 function startQuiz(){
+    start.style.display = 'none';
     quizInfo.style.display = 'none';
     quiz.style.display = 'contents';
-    start.style.display = 'none';
     nextPrevious.style.display ='contents';
     currentQuestion = 0;
     score = 0;
@@ -150,38 +147,36 @@ displayQuestion1();
 function displayQuestion1(){
     quizQuestion.innerHTML = myQuestions[0].question;
    
-     for (let i = 0; i < 3; i++) {
+     for (let i = 0; i < 4; i++) {
         let btn = quizOption[i];
         btn.innerHTML = myQuestions[0].options[i].option;
     }
-    currentQuestion = 1;
-
-
+    currentQuestion++;
 }
 
 function displayQuestion(){
    
-    for(let i = 1; i <= currentQuestion ;i++){
-        quizQuestion.innerHTML = myQuestions[i].question;
-       
-        for (let j = 0; j < 3; j++) {
+    console.log(currentQuestion);
+    for(let i = 1; i < currentQuestion ;i++){
+        quizQuestion.innerHTML = myQuestions[currentQuestion].question;
+       console.log(quizQuestion.innerHTML);
+        for (let j = 0; j < 4; j++) {
             let btn = quizOption[j];
             btn.innerHTML = myQuestions[i].options[j].option;
         }
        
     }
-    currentQuestion++;
-   
-    if(currentQuestion === 10){
+    
+    while(currentQuestion !== 10){
           
         quiz.style.display = 'none';
         nextPrevious.style.display = 'none';
-        
         playAgain.style.display = 'contents';
         result.style.display ='contents';
              
-      
+        currentQuestion++;
     }
+    
 
 }
 function playAgainFunction(){
