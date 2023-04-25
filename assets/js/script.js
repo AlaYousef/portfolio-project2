@@ -187,8 +187,6 @@ function displayQuestion(){
     }
         
     if(currentQuestion === 10){
-            console.log(currentQuestion);
-            console.log('dtfyguhjhkl');
             quiz.style.display = 'none';
             nextPrevious.style.display = 'none';
             playAgain.style.display = 'contents';
@@ -214,10 +212,9 @@ function checkAnswer() {
 
     let correctAnswer = myQuestions[currentQuestion-1].options.find(element => element.answer === true);
         //checks if answer is true or false as well as updating score
-        console.log(currentQuestion);
-        console.log(correctAnswer.option);
-        console.log(this.innerText);
+      
         if (correctAnswer.option === this.innerText){
+
             incrementScore();
             //add class if correct
             this.classList.add('correct');
@@ -251,10 +248,16 @@ function incrementScore() {
     let oldScore = document.getElementById("score").innerText;
     document.getElementById("score").innerText = ++oldScore;
 
-   document.getElementById("total-score").innerText =  document.getElementById("score").innerText;
+    let total = document.getElementById("score").innerText;
 
+    let final = `You have finish the quiz and your score is ${total} out of 10`;
     
+    document.getElementById('result').innerText = `You have finish the quiz and your score is 
+                            ( ${total} / 10 )`;
 
+
+
+  
 }
 /**
  * function to go to next question and at end of game, displays the result area

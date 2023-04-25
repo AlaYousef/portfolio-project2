@@ -89,15 +89,13 @@ header{
     width: 50vw;
     
 }
-#total-score{
-    
-    padding: 0 10px 0 10px;
-    font-size: 25px;
-    background-color: #e3b433;
-    color: #fff;
-    border-radius: 7px;
-    cursor: pointer;
-    width: 50vw;
+#result{
+    font-size: 500px;
+    font-weight: bold;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    float: right;
 }
 #score-area{
     display: -webkit-inline-box;
