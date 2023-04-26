@@ -218,14 +218,14 @@ function checkAnswer() {
         //checks if answer is true or false as well as updating score
       
         if (correctAnswer.option === this.innerText){
-
-            incrementScore();
             //add class if correct
             this.classList.add('correct');
+            incrementScore();
             
         } else {
             //add class if incorrect
             this.classList.add('incorrect');
+            incrementWrongAnswer();
         }
     
     console.log(correctAnswer);
@@ -258,6 +258,15 @@ function incrementScore() {
  
 }
 
+/**
+ * Gets the current tally of incorrect answers from the DOM and increments it by 1
+ */
+function incrementWrongAnswer() {
+
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldScore;
+    
+}
 /**
  * function to go to next question and at end of game, displays the result area
  * and play again-button
