@@ -1,28 +1,3 @@
-/**
- * contact us page  handleSubmit function
- */
-let form = document.getElementById("feedback-form");
-form.addEventListener('submit',handleSubmit);
-
-/**
- * function to handle the click event on submit button and display a confirmation msg
- */
-function handleSubmit(event){
-    event.preventDefault();
-    
-    form.reset();
-    let name = document.getElementById('full-name').value;
-    Swal.fire(`Submitted! Thank you ' ${name} 'for your feedback`);
-
-    
-
-    
-   
-}
-function reset(){
-    document.getElementById('full-name').innerText = "";
-}
-
 
 /**
  * questions and answers array
@@ -121,7 +96,7 @@ let myQuestions = [
     }];
 
 /**
- * function to start the quize 
+ * variables for elements Id's  
  */
 let start = document.getElementById('start-quiz');
 let quizQuestion = document.getElementById('question-number');
@@ -313,4 +288,5 @@ function disable() {
     document.getElementById('option4').style.pointerEvents = 'none';
 
 }
+
 
