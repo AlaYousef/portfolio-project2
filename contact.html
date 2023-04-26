@@ -10,8 +10,7 @@
 
      <!-- Stylesheet -->
      <link rel="stylesheet" href="assets/css/style.css">
-     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-
+     
     <title>Document</title>
 </head>
 <body>
@@ -21,43 +20,49 @@
     <section id="contact-section">
         <div id="cover-contact">
             <div id="heading">
-            <h3>Contact us</h3>
+                <nav style="float: right;color: white;"> <a href="index.html"><i class="fa-solid fa-house"> </i> </a></nav> 
+            <h1>Contact us</h1>
+            
             <p>Here you can send your feedback about the quiz</p>
             </div>
 
             <div id="form-div">
-            <form id = "feedback-form" action="contact.html" method="get">
-                <div id="inputs-fieldset">
-                   
-                    <label for="full-name" class="contact-form">Your Full Name:</label><br>
-                    <input type="text" name="full-name" id="full-name" placeholder=" *Your Full Name" class="contact-input margin-contact-input" required>
-                    <br><br>
-                    <label for="email">Email Adress:</label><br>
-                    <input type="email" name="email" id="email" placeholder=" *Your Email" class="contact-input margin-contact-input" required>
-                    <br><br>
-                    <label for="phone">Phone Number:</label><br>
-                    <input type="tel" name="phone" id="phone" placeholder=" *Your phone" class="contact-input margin-contact-input" required>
-                    <br><br>
+                <form id = "feedback-form" action="contact.html" method="get">
+                    <div id="inputs-fieldset">
                     
-                    
-                </div >
-                <div id="textarea-fieldset">
-                    
-                    <label for="message">Your message:</label>
-                    <textarea id="message"   name="message" placeholder=" *Your Message" class="margin-contact-input" required></textarea>
-                </div>
-                <div id="div-button">
-                    <button type="submit">Send!</button> 
-                </div>
-            </form>
+                        <label for="full-name" class="contact-form">Your Full Name:</label><br>
+                        <input type="text" name="full-name" id="full-name" placeholder=" *Your Full Name" class="contact-input margin-contact-input" required>
+                        <br><br>
+                        <label for="email">Email Adress:</label><br>
+                        <input type="email" name="email" id="email" placeholder=" *Your Email" class="contact-input margin-contact-input" required>
+                        <br><br>
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" name="phone" id="phone" placeholder=" *Your phone" class="contact-input margin-contact-input" required>
+                        <br><br>
+                        
+                        
+                    </div >
+                    <div id="textarea-fieldset">
+                        
+                        <label for="message">Your message:</label>
+                        <textarea id="message"   name="message" placeholder=" *Your Message" class="margin-contact-input" required></textarea>
+                    </div>
+
+                    <div id="div-button">
+                        <button type="submit">Send!</button> 
+                    </div>
+                </form>
+            </div>
         </div>
-        </div>
-               
-        
+     
     </section>
 
     </main>
 
    <script src="assets/js/script.js"></script> 
+   <script src="https://kit.fontawesome.com/9b10509272.js" crossorigin="anonymous"></script>
+   <script src=
+     "https://cdn.jsdelivr.net/npm/sweetalert2@9">
+         </script>
 </body>
 </html>

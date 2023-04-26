@@ -108,6 +108,7 @@ let totalScore = document.getElementById('total-score');
 let playAgain = document.getElementById('again-quiz');
 let result = document.getElementById('result');
 let score = document.getElementById('score');
+let scoreArea = document.getElementById('score-area');
 let correctAns = 0;
 let incorrect = 0;
 let currentQuestion;
@@ -131,14 +132,17 @@ window.onload = function startPage() {
     totalScore.style.display = 'none';
     playAgain.style.display = 'none';
     result.style.display = 'none';
+    scoreArea.style.display = 'none';
 };
 
 
 function startQuiz(){
     start.style.display = 'none';
     quizInfo.style.display = 'none';
+    playAgain.style.display = 'none';
     quiz.style.display = 'contents';
     nextPrevious.style.display ='contents';
+    scoreArea.style.display = 'contents';
     currentQuestion = 0;
     score = 0;
 
@@ -188,13 +192,13 @@ function displayQuestion(){
         
     if(currentQuestion === 10){
             quiz.style.display = 'none';
+            result.style.display = 'contents';
+            totalScore.style.display = 'contents';
             nextPrevious.style.display = 'none';
+            scoreArea.style.display = 'none';
             playAgain.style.display = 'contents';
-            result.style.display ='contents';
-    }
-     
-    
-              
+         
+    }         
 
 }
 function playAgainFunction(){
@@ -247,18 +251,13 @@ function incrementScore() {
 
     let oldScore = document.getElementById("score").innerText;
     document.getElementById("score").innerText = ++oldScore;
-
-    let total = document.getElementById("score").innerText;
-
-    let final = `You have finish the quiz and your score is ${total} out of 10`;
-    
-    document.getElementById('result').innerText = `You have finish the quiz and your score is 
-                            ( ${total} / 10 )`;
-
-
-
-  
+    document.getElementById("total-score").innerText = oldScore;
+    /*
+     let total = document.getElementById("score").innerText;
+    return total;*/
+ 
 }
+
 /**
  * function to go to next question and at end of game, displays the result area
  * and play again-button
@@ -280,7 +279,7 @@ function disable() {
 
 }
 /**
- * contact us page 
+ * contact us page  handleSubmit function
  */
 let form = document.getElementById("feedback-form");
 form.addEventListener('submit',handleSubmit);
@@ -291,9 +290,9 @@ let errorMsg = document.getElementById("errors");
  */
 function handleSubmit(event){
     event.preventDefault();
-    
+
     let name = document.getElementById('full-name').value;
     Swal.fire(`Submitted! Thank you ${name[0]} for your feedback`);
-    
+    console.log('esdrftghjklöä');
     
 }

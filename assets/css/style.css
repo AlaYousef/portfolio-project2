@@ -90,20 +90,17 @@ header{
     
 }
 #result{
-    font-size: 500px;
-    font-weight: bold;
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-    float: right;
+   font-size: 30px;
+   text-align: center;
+   line-height: 1.7
+  
 }
-#score-area{
-    display: -webkit-inline-box;
-    
-}
+
 
 .scores{
     padding: 10px;
+    display: inline-block;
+    
     
 }
 
@@ -139,19 +136,21 @@ header{
 }
 #heading{
     text-align: center;
-    display: block;
     padding-top: 5px;
-    margin: 0 auto;
     line-height: .5;
 
+}
+#heading nav{
+    margin-right: 10px;
+}
+h1, nav {
+    line-height: 20px;
 }
 #heading p{
  font-size: smaller;
  font-weight: normal;
  margin-top: 0px;
 }
-
-
 
 #form-div{
     width: 100%;
@@ -241,7 +240,17 @@ button {
 #textarea-fieldset {
     width: 50%;
 }
+
+
 }
+@media (max-width: 950px){
+    .scores{
+        margin: -1px;
+        display: inline-block;
+        
+    }
+}
+    
 
 @media (max-width: 850px) {
     #questions-container {
@@ -254,11 +263,12 @@ button {
     }
     #score-area{
         margin-top: 20px;
-        display: block;
+       
         
     }
     .scores{
-        margin: 1px;
+        margin: -1px;
+        display: block;
         
     }
     /*contact page responsive style*/
@@ -268,7 +278,7 @@ button {
     }
     
     #inputs-fieldset{
-        width:50%;
+       width:50%;
        display: inline-block;
        margin: 0px;
       
@@ -313,7 +323,7 @@ button {
     #total-score{
         width:90%;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 20px;
     }
     .scores{
        font-size: medium;
