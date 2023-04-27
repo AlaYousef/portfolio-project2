@@ -6,8 +6,8 @@ let myQuestions = [
     {
         question: '1.Who has been sent as a mercy to the worlds?',
         options: [
-            {option: 'Prophet Jesus (PBUH)', answer: true},
-            {option: 'Prophet Muhammad (PBUH)', answer: false},
+            {option: 'Prophet Jesus (PBUH)', answer: false},
+            {option: 'Prophet Muhammad (PBUH)', answer: true},
             {option: 'Prophet Moses (PBUH)', answer: false},
             {option: 'Prophet Abraham (PBUH)', answer: false}
         ],
@@ -45,7 +45,7 @@ let myQuestions = [
             {option: 'By Edwin Hubble 1929', answer: false},
             {option: 'By Georges Lemaître 1920', answer: false},
             {option: 'In the Quran over 1400 years ago (surah:verse 51:47)', answer: true},
-            {option: 'In the Quran over 1400 years ago (surah:verse 51:47)', answer: true}
+            {option: 'In the Quran over 1400 years ago (surah:verse 40:30)', answer: false}
         ],
     },
     {
@@ -112,7 +112,7 @@ let score = document.getElementById('score');
 let scoreArea = document.getElementById('score-area');
 let correctAns = 0;
 let incorrect = 0;
-let currentQuestion;
+let currentQuestion = 0;
 
 let nextPrevious = document.getElementById('next-previous');
 
@@ -120,7 +120,7 @@ let nextPrevious = document.getElementById('next-previous');
 start.addEventListener('click', startQuiz);
 next.addEventListener('click', displayQuestion);
 playAgain.addEventListener('click', playAgainFunction);
-currentQuestion = 0;
+
 
 /* 
  * hide quiz and result area when window is loaded and 
@@ -167,13 +167,12 @@ function displayQuestion(){
     for(let i = 0; i <= currentQuestion;i++){
        
         quizQuestion.innerHTML = myQuestions[i].question;
-        console.log('up' + currentQuestion + '  ' + quizQuestion.innerHTML );
-        
+       
         for (let j = 0; j < 4; j++) {
             let btn = quizOption[j];
             btn.innerHTML = myQuestions[i].options[j].option;
              //remove class when next question displays
-
+             console.log( btn.innerHTML  );
             if (btn.classList.contains('incorrect')) {
                 btn.classList.remove('incorrect');
             }
@@ -185,23 +184,22 @@ function displayQuestion(){
         
     enableOptions();
        
+       
     }
    
-    if(currentQuestion <= 10){
+    if(currentQuestion <= 9){
         currentQuestion = currentQuestion + 1;
-        console.log(currentQuestion);
-        if(currentQuestion === 10){
+    }
+
+    if(currentQuestion === 10){
             quiz.style.display = 'none';
             result.style.display = 'contents';
             totalScore.style.display = 'contents';
             nextPrevious.style.display = 'none';
             scoreArea.style.display = 'none';
             playAgain.style.display = 'contents';
-        }
-
     }
-            
-
+    
 }
 function playAgainFunction(){
   
@@ -218,7 +216,6 @@ function checkAnswer() {
 
     let correctAnswer = myQuestions[currentQuestion-1].options.find(element => element.answer === true);
         //checks if answer is true or false as well as updating score
-      
         if (correctAnswer.option === this.innerText){
             //add class if correct
             this.classList.add('correct');
@@ -230,7 +227,6 @@ function checkAnswer() {
             incrementWrongAnswer();
         }
     
-    console.log(correctAnswer);
     
 }
 
