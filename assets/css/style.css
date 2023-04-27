@@ -307,14 +307,21 @@ button {
         margin-top: 30px;
         overflow: scroll;
     }
-    
+    #box{
+        width:inherit;
+        
+    }
     #start-quiz{
         width:90%;
         margin: 0 auto;
         margin-top: 30px;
     }
-    
-    #again-quiz{
+    #next-previous p{
+        width:90%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    #again-quiz p{
         width:90%;
         margin: 0 auto;
         margin-top: 30px;
@@ -343,6 +350,9 @@ button {
         width: 100%;
         display: block;
        
+    }
+    #result{
+        font-size: medium;
     }
     
 }

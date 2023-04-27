@@ -148,7 +148,7 @@ function startQuiz(){
     score = 0;
 
    
-displayQuestion1();
+displayQuestion();
  
     
 }
@@ -159,15 +159,15 @@ function displayQuestion1(){
         let btn = quizOption[i];
         btn.innerHTML = myQuestions[0].options[i].option;
     }
-    currentQuestion++;
+    
 }
 
 function displayQuestion(){
    
-    for(let i = 1; i <= currentQuestion;i++){
+    for(let i = 0; i <= currentQuestion;i++){
        
         quizQuestion.innerHTML = myQuestions[i].question;
-        
+        console.log('up' + currentQuestion + '  ' + quizQuestion.innerHTML );
         
         for (let j = 0; j < 4; j++) {
             let btn = quizOption[j];
@@ -189,17 +189,18 @@ function displayQuestion(){
    
     if(currentQuestion <= 10){
         currentQuestion = currentQuestion + 1;
-    }
-        
-    if(currentQuestion === 10){
+        console.log(currentQuestion);
+        if(currentQuestion === 10){
             quiz.style.display = 'none';
             result.style.display = 'contents';
             totalScore.style.display = 'contents';
             nextPrevious.style.display = 'none';
             scoreArea.style.display = 'none';
             playAgain.style.display = 'contents';
-         
-    }         
+        }
+
+    }
+            
 
 }
 function playAgainFunction(){
@@ -288,5 +289,6 @@ function disable() {
     document.getElementById('option4').style.pointerEvents = 'none';
 
 }
+
 
 

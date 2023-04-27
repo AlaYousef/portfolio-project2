@@ -11,7 +11,7 @@ function handleSubmit(event){
     event.preventDefault();
     
     let name = document.getElementById('full-name').value;
-    Swal.fire(`Submitted! Thank you ' ${name} 'for your feedback`);
+    Swal.fire(`Submitted! Thank you '${name}' for your feedback`);
 
     
     form.reset();
