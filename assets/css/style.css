@@ -210,7 +210,7 @@ textarea {
 }
 button {
     width: 30%;
-    padding: 10px 32px;
+   
     align-items: center;
     background-color:white;
     color: #4a0e60;
@@ -297,6 +297,9 @@ button {
 }
 
 @media (max-width: 550px) {
+    header{
+        font-size: smaller;
+    }
     #questions-container {
         width:90%;
         align-items: center;
@@ -307,6 +310,10 @@ button {
         margin-top: 30px;
         overflow: scroll;
     }
+    #quiz-questions p {
+        font-size: small;
+    }
+    
     #box{
         width:inherit;
         
@@ -315,16 +322,19 @@ button {
         width:90%;
         margin: 0 auto;
         margin-top: 30px;
+        font-size: medium;
     }
     #next-previous p{
         width:90%;
         margin: 0 auto;
         margin-top: 30px;
+        font-size: medium;
     }
     #again-quiz p{
         width:90%;
         margin: 0 auto;
         margin-top: 30px;
+        font-size: medium;
         
     }
     #total-score{
@@ -335,19 +345,23 @@ button {
     .scores{
        font-size: medium;
       
-        
     }
-
-
+    #heading {
+        height:400px;
+        font-size: x-small;
+        
+        display: block;
+    }
+    
     #inputs-fieldset{
         width:100%;
-       display: block;
-      
-       
+        height:40%;
+        display: block;
         
     }
     #textarea-fieldset{
         width: 100%;
+        height:40%;
         display: block;
        
     }
