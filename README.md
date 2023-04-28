@@ -183,7 +183,7 @@ The project was deployed to GitHub pages by these steps:
 To fork the The Prophets History Quiz repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, [AlaYousef/Portfolio-project1](https://github.com/AlaYousef/portfolio-project2)
+2. Go to the repository for this project, [AlaYousef/Portfolio-project2](https://github.com/AlaYousef/portfolio-project2)
 3. Click the Fork button in the top right corner.
 
 
