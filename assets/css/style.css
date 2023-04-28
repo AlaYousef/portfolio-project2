@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Merriweather:ital@1&family=Noto+Serif+Lao&family=PT+Serif:ital,wght@1,400;1,700&family=Source+Serif+Pro:ital,wght@1,200;1,400&display=swap');
+
 /*styling body*/
 body {
     background-color: #4a0e60;
@@ -13,11 +14,13 @@ body {
     flex-direction: column;
     font-size: 150%;
 }
+/*header style */
 header{
     font-family: 'Instrument Serif', serif;
     margin-top: 20px;
     font-size: larger;
 }
+/*questions container div style*/
 #questions-container {
     width: 50vw;
     height: 50vh;
@@ -29,6 +32,13 @@ header{
     margin-bottom: 30px;
     font-weight: normal;
 }
+/*result div style*/
+#result{
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.7
+   
+ }
 /* styling for quiz answers options */
 .option-number {
     padding: 7px;
@@ -95,13 +105,6 @@ header{
     width: 50vw;
     
 }
-
-#result{
-   font-size: 30px;
-   text-align: center;
-   line-height: 1.7
-  
-}
 /*style score area*/
 .scores{
     padding: 10px;
@@ -132,13 +135,14 @@ header{
 #cover-contact{
    
     width: 70vw;
-   height: 100%;
-    font-size: 100%;
+    height: 100%;
+    
     background-color: #e3b433;
     border-radius: 7px;
 
 
 }
+/*heading style*/
 #heading{
     text-align: center;
     padding-top: 5px;
@@ -156,7 +160,7 @@ h1, nav {
  font-weight: normal;
  margin-top: 0px;
 }
-
+/*form div style*/
 #form-div{
     width: 100%;
     display:inline-block;
@@ -170,6 +174,7 @@ h1, nav {
     font-weight: normal;
     text-align: left;
 }
+/*inputs fileds style*/
 #inputs-fieldset{
     
     height: auto;
@@ -180,6 +185,7 @@ h1, nav {
    
     
 }
+/*textarea fielset div style*/
 #textarea-fieldset{
     
     height: auto;
@@ -195,7 +201,7 @@ h1, nav {
     border: 2px solid  #4a0e60;
     box-shadow: 2px 2px 4px #a79999;
 }
-
+/*text area atyle*/
 textarea {
     width: 90%;
     height: 220px;;
@@ -213,6 +219,7 @@ textarea {
  
     
 }
+/*submit button style*/
 button {
     width: 30%;
    
@@ -237,34 +244,35 @@ button {
   }
 
   
-/* --------- Media queries */
-
-
+/* --------- Media queries for screens with max width 1200px */
 @media (max-width: 1200px){
-    
-#textarea-fieldset {
-    width: 50%;
-}
+    /*contact us page */   
+    #textarea-fieldset {
+        width: 50%;
+    }
 
-
 }
+ 
+/* --------- Media queries for screens with max width 950px */
 @media (max-width: 950px){
+    /*index page */
     .scores{
         margin: -1px;
         display: inline-block;
         
     }
 }
-    
-
+     
+/* --------- Media queries for screens with max width 850px */
 @media (max-width: 850px) {
+     
+    /*index page */
     #questions-container {
         
         overflow: scroll;
     }
     #box{
         width:inherit;
-        
     }
     #score-area{
         margin-top: 20px;
@@ -276,7 +284,7 @@ button {
         display: block;
         
     }
-    /*contact page responsive style*/
+    /*contact us page responsive style*/
     #cover-contact {
         display: inline-block;
         width: 100%;
@@ -294,14 +302,14 @@ button {
         width: 50%;
         display: inline-block;
         margin: 0px;
-        float: right;
-       
+    
     }
     
        
 }
-
+/* --------- Media queries for screens with max width 550px */
 @media (max-width: 550px) {
+    /* index.html style */
     header{
         font-size: smaller;
     }
@@ -318,7 +326,9 @@ button {
     #quiz-questions p {
         font-size: small;
     }
-    
+    #result{
+        font-size: medium;
+    }
     #box{
         width:inherit;
         
@@ -351,27 +361,49 @@ button {
        font-size: medium;
       
     }
-    #heading {
-        height:400px;
-        font-size: x-small;
-        
+   
+    /* contact us page style */
+    #cover-contact{
+        max-height: 2000px;
         display: block;
+        
+      }
+   
+    #heading {
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 50%;
+        line-height: 1.5;
+        height: 50%;
+         
+        font-size: 20px;
+        padding-top: 50px;
     }
-    
+    #heading h1 {
+        text-align: center;
+        padding-top: 70px;
+        line-height: 1.5;
+        margin-bottom: 0px;
+    }
+    #heading nav{
+        padding-top: 65px;
+        
+    }
+    #form-div{
+        max-height: 50%;
+    }
     #inputs-fieldset{
         width:100%;
-        height:40%;
+        max-height: fit-content;
         display: block;
         
     }
     #textarea-fieldset{
         width: 100%;
-        height:40%;
+        max-height: fit-content;
         display: block;
        
-    }
-    #result{
-        font-size: medium;
-    }
+    } 
+    
     
 }
