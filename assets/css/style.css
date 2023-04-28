@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Merriweather:ital@1&family=Noto+Serif+Lao&family=PT+Serif:ital,wght@1,400;1,700&family=Source+Serif+Pro:ital,wght@1,200;1,400&display=swap');
+
 body {
     background-color: #4a0e60;
     color: #fff;
@@ -12,6 +14,7 @@ body {
     font-size: 150%;
 }
 header{
+    font-family: 'Instrument Serif', serif;
     margin-top: 20px;
     font-size: larger;
 }

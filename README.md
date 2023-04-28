@@ -1,10 +1,11 @@
 # **The Prophets History Quiz**
-Arabic book fair is an exhibition for Arabic books in Sweden, Malmö city. The site targets Arabs in Sweden, where it will be useful to help in informing about details of the annual exhibition that will be held in addition to help people to reserve books from arabs countries to be available in the exhibition. 
+Thaqafa Quiz is quiz dedicated to prophets, perhaps you simply want to find out more about prophets. We think you’ll find this quiz interesting and enjoyable.
+We have focussed mainly on the prophets from Qur’an, but have also added  more questions about Islam in order to get simple understanding of Islam. 
+This Quiz consistes of 10 questions, each question has one correct answer with one point for each one, So you will get your total score from 10 at the end. 
 
+Welcome to the journey through <a href="https://alayousef.github.io/Portfolio-project2/" target="_blank" rel="noopener">The Prophets History Quiz</a>
 
-Welcome to the journey through <a href="https://alayousef.github.io/Portfolio-project1/" target="_blank" rel="noopener">Arabic Book Fair</a>
-
-![Arab book fair responsive design](assets/documentation/responsive.png)
+![The Prophets History Quiz responsive design](assets/documentation/responsive.png)
 
 
 ---
@@ -54,15 +55,13 @@ Welcome to the journey through <a href="https://alayousef.github.io/Portfolio-pr
 
 ### Colour Scheme
 
-The colour scheme which chosen is one based on blue colour in different shades. Blue considered one of the calm and comfort colors, carries the meanings of avoidence of tension and ability to communicates with others. This is something that we want hopefully pass onto the user. In addition to, dark blue helped to prevent distraction between foreground information and backgrounds.
+The colour scheme which chosen is one based violett, bright orange and white for texts. These colors are compatible with each other which are consistent in style and colour and at the same time create contrast between background and foreground colours.
 
 ![Colour Palate image](assets/documentation/colour-pallet.png)
 [Back to top](<#contents>)
 
 ### Typography
-The fonts chosen were 'merriweather' with weight 400 Italic style for the headings and the body text.
-
-'Merriweather' was chosen to give the user a comfortable feeling while reading. It's easy, clear and understandable. This font is imported from [Google Fonts](https://fonts.google.com/specimen/Merriweather?query=Merriweather)
+The fonts chosen were 'Instrument Serif' with weight 400 Regular style for the heading. This font is attractive., so it is appropriate for but not easy to read for the body text. So the body text has  the default font  that the browser has.This font is imported from [Google Fonts](https://fonts.google.com/specimen/Instrument+Serif/)
 
 [Back to top](<#contents>)
 
