@@ -20,8 +20,11 @@
     <!--main section that contain the game-->
     <main>
 
-        <!--questions section-->
+        <!--quiz container, that contains quiz informaion div, 
+            that changed to quiz questions div after click on 
+            start quiz button. Finally the result div that display after finishing quiz -->
         <section id="questions-container">
+            <!--quiz details div-->
             <div id = "quiz-info">
                 <p>In this quick you are going to challange yourself or find out more about prophets
                     But first, let's go over some rules.</p>
@@ -33,6 +36,7 @@
                     <li>You can repeat the quiz more than once.</li>
                 </ul>
             </div>
+            <!--quiz questions div-->
             <div id="quiz-questions">
                 <p  id="question-number">1.question?</p>
                 <p  id="option1" class="option-number" style="cursor: pointer;" onclick="disable()">option1</p>
@@ -41,6 +45,7 @@
                 <p  id="option4" class="option-number" style="cursor: pointer;" onclick="disable()">option4</p>
 
             </div>
+            <!--quiz final result div-->
             <div id="result" >
                <p> " You have finished the quiz <i class="fa-solid fa-thumbs-up"></i> Your score is <br> ( 
                      <span id="total-score"> 0 </span> / 10 ) " 
@@ -50,13 +55,18 @@
 
         </section>
 
+        <!--section contains 4 divs, The first 3 divs are changing 
+            from one to another according to the action that the user take. 
+            First it displays start div(start quiz). after that it changes 
+            to next div (next button), and finally changes to quiz again(play again button) -->
         <section id="box">
             <div id="start-quiz" class="box-area">Start Quiz</div>
             <div id="next-previous" class="box-area">
                 <p> <span class="sides" id="previous" style = "display: none;"> Previous</span> <span class="sides" id ="next">Next</span> </p>
             </div>
             <div id="again-quiz" class="box-area"><p> Play Again</p></div>
-           
+
+           <!--score area div, consists score of correct and incorrect answers-->
             <div id="score-area" >
                 <p class="scores">Correct Answers: <span id="score">0</span></p>
                 <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
@@ -67,10 +77,8 @@
 
         
     </main>
-
-    <footer></footer>
-
+    <!--Javascript page-->
    <script src="assets/js/script.js"></script> 
-   <script src="https://kit.fontawesome.com/9b10509272.js" crossorigin="anonymous"></script>
+   
 </body>
 </html>
