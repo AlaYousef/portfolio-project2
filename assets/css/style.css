@@ -250,6 +250,25 @@ button {
     #textarea-fieldset {
         width: 50%;
     }
+     
+    /*contact us page responsive style*/
+    #cover-contact {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    #inputs-fieldset{
+       width:50%;
+       display: inline-block;
+       margin: 0px;
+      
+    }
+    #textarea-fieldset{
+        width: 50%;
+        display: inline-block;
+        margin: 0px;
+    
+    }
 
 }
  
@@ -261,6 +280,28 @@ button {
         display: inline-block;
         
     }
+    
+    /*contact us page responsive style*/
+    #cover-contact {
+        display: inline-block;
+        width: 100%;
+    }
+    
+    #inputs-fieldset{
+       width:50%;
+       display: inline-block;
+       margin: 0px;
+      
+       
+        
+    }
+    #textarea-fieldset{
+        width: 50%;
+        display: inline-block;
+        margin: 0px;
+    
+    }
+    
 }
      
 /* --------- Media queries for screens with max width 850px */
