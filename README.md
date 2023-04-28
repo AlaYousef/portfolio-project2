@@ -18,21 +18,19 @@ Welcome to the journey through <a href="https://alayousef.github.io/Portfolio-pr
   
 
 * [**Features**](<#features>)
-    * [**Home page**](<#navigation-menu>)
-         * [Navigation menu](<#navigation-menu>)
-         * [Backround-cover-text](<#background-cover>)
-         * [Fair-info section](<#fair-info>)
-         * [Footer](<#footer>)
-    * [**About Us Page**](<#about-us-page>)
-        * About us information      
+    * [**Home page**](<#start-page>)
+         * [Start page](<#start-page>)
+         * [Quiz page](<#quiz-page>)
+         * [Score area](<#score-area>)
+         * [Answers colors system](<#answers-colors-system>)
+         * [Score tracking system](<#score-tracking-system>)
+         * [Total score page](<#total-score-system>)
+         * [Play again button](<#play-again-button>)
+         
             
     * [**Contact Us Page**](<#contact-us-page>)
        * Contact details
-       
     
-    * [**Publishers Page**](<#publishers-page>)
-        * Publishers houses
-
     * [**Future Features**](<#future-features>)
 
 * [**Technologies Used**](#technologies-used)
@@ -68,71 +66,80 @@ The fonts chosen were 'Instrument Serif' with weight 400 Regular style for the h
 ---
 
 # Features
-Arab Book Fair site is set up to be simple, clear and easy to use. It contains many features that the user probably need such as a navigation bar, contact form and most importantly, the information that user is looking for will be found once he opens the site. The goal in general is to let the user feel comfortable and lucidity that what he want to know is exist in the site, clear, understandable and can obtain easily.
+The Prophets History Quiz is set up to be simple, clear and easy to use. It contains many features that the user probably need such as a navigation bar, contact form and most importantly, the information that user is looking for will be found once he opens the site. The goal in general is to let the user feel comfortable and lucidity that what he want to know is exist in the site, clear, understandable and can obtain easily.
 
 ## Existing Features  
-  * ### Navigation Menu
+  * ### start page
 
-    * Sited at the top of all the pages in the site at the right side, it is contains links to all the pages of the site to enable ease of movement from one page to another in addition to, the user can know easily what page he is currently on.
-    * The logo also is clickable and link to the home page.
+    * This page will appeare once the user opens the site. It has the quize title and a little information about the quiz. This will give the user a sense of comfort and that everything is clear and understandable and what will be in the next step.
+    * The page contain a clikable button (Start Quiz) that allow the user to start the quiz. 
 
-![Navigation bar image](assets/documentation/navigation.png)
+![Start page image](assets/documentation/start-page.png)
 [Back to top](<#contents>)
 
-  * ### Backround-cover-text
+  * ### Quiz page
 
-      * Located on the background on the home page on right side. It was intended to allow user get a quick look about the fair details.
+      * Appears after the user click on (Start Quiz) button on start page. The user will see the first question with the ability to move to the next question when click on (Next) button. 
 
-![Covet-text image](assets/documentation/bg-covet-text.png)
+          ![Quiz video](assets/documentation/quiz.gif)
+
+
+         
 [Back to top](<#contents>)
 
-  * ### Fair-info section
-    * Fair info section lets the user know all details about the exhibition. Including the time, date and location, in addition to inforamtion about the activities that will be in the exhibition.
+  * ### Answers colors system
+    * This system support correct/incorrect answers. Each option has a red or green background color that will appear after the user choose the option.  
+    * The correct answer option background will change to green after clicked. Incorrect answer option background will change to red after clicked.    
 
-    * An intended map will help the user to get the exact location for the exhibition 
+![correct answer image](assets/documentation/correct.png)
 
-![Fair-info image](assets/documentation/fair-info.png)
+![incorrect answer image](assets/documentation/incorrect.png)  
+
+[Back to top](<#contents>)
+
+  * ### Score tracking system
+    * A score tracking system which lets the user know the how many scores for each correct and incorrect answers.  
+
+![Score area image](assets/documentation/scores.png)
 [Back to top](<#contents>)
 
 
-* ### Footer
-    
-    * Footer section include links to the relevent social media sites for Arabic Book Fair in Sweden. And the links to social media platforms will open in a new tab to allow easy of navigation for the user.
-    * The social media will help the user in research into Sweden Arab Book Fair pages in social media.
-    
-![Footer image](assets/documentation/footer.png)
+  * ### Total score page
+    * At the end of the quiz, the user will get the total score of the quiz out of 10. 
+
+
+![Result image](assets/documentation/result.jpg)
 [Back to top](<#contents>)
 
+* ### Play again button
+    * At the end of the quiz, when the user get the total score of the quiz. The user has the ability to increase the total score if it was not so good by repeating the quiz as many times as he wants. And that by click on (Play Again) button that will appear after the user end the quiz and gets the total score.
 
-* ### About Us Page
+        ![Play again video](assets/documentation/play-again.gif)
 
-    * About us page give the user an overview about what is the arab book fair in Sweden, responsible parts and the reason for choosing the city in which the exhibition will be held.
-
-![About us image](assets/documentation/about.png)
 [Back to top](<#contents>)
 
 
 
 * ### Contact Us Page
 
-    * This page will allow the user to get contact to Arab book fair to inquire about something related to the exhibition or book a specific books to be available in the exhibition.
-    * The users will be asked to submit their full name, email address, phone number and the message he want.
+    * This page will appear after the user ends the quiz and gets the total score. A contact us link will appear which let the user to send a feedback about the quiz.
+    * Contact us page will appear after clicking on the link. This page has a form that the user should fill.
+    * The user will be asked to submit full name, email address, phone number and the message to be sent.
     * The users should fill out the form completly to be sent, otherwise he will be asked to enter the missing information.
     
 ![Contact Us page image](assets/documentation/contact.png)
+
+* The users will get a confirmation message that the message was sent successfully.
+
+![Contact Us page image](assets/documentation/confirmation.png)
+
 [Back to top](<#contents>)
 
 
-* ### Publishers Page
-    * The publishers page will provide the user with supporting images withe the most imporatnt publishing houses that will participate in the exhibition.
-    * It provides a direct link that opens in a new tab back to see the books for each publishing houses that will be available in the exhibition.
-
-![Publishers page image](assets/documentation/publishers.png)
-[Back to top](<#contents>)
 ## Future Features 
 
-* A 'Language' will be added in the navigation bar that would be help the users to translate the page into Arabic and Swedish to help users who doesn't know the English language. This would make the site closer to the user and more understandable.
-* 'Gallary' page will be added for each annual exhibition that includes images of different activities that  take place in the exhibition.
+* The ability to let the user change the answer option after click on it. So it allow the user to choose the correct answer after many attempts of choosing the wrong answer.
+* A 'previous' button will be added so the user can return back to the previuos question and choose another answer.
 
 [Back to top](<#contents>)
 
