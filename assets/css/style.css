@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Merriweather:ital@1&family=Noto+Serif+Lao&family=PT+Serif:ital,wght@1,400;1,700&family=Source+Serif+Pro:ital,wght@1,200;1,400&display=swap');
-
+/*styling body*/
 body {
     background-color: #4a0e60;
     color: #fff;
@@ -29,7 +29,7 @@ header{
     margin-bottom: 30px;
     font-weight: normal;
 }
-/* styling for quiz options */
+/* styling for quiz answers options */
 .option-number {
     padding: 7px;
     margin-bottom: 5px;
@@ -54,6 +54,7 @@ header{
     text-align: center;
     width: 50vw;
 }
+/*style start button*/
 #start-quiz{
     padding: 0 10px 0 10px;
     font-size: 25px;
@@ -64,6 +65,7 @@ header{
     width: 50vw;
     
 }
+/*style next button*/
 #next-previous p{
     padding: 0 10px 0 10px;
     font-size: 25px;
@@ -81,6 +83,7 @@ header{
     display: inline;
 
 }
+/*style play again button*/
 #again-quiz p{
     
     padding: 0 10px 0 10px;
@@ -92,30 +95,20 @@ header{
     width: 50vw;
     
 }
+
 #result{
    font-size: 30px;
    text-align: center;
    line-height: 1.7
   
 }
-
-
+/*style score area*/
 .scores{
     padding: 10px;
     display: inline-block;
     
     
 }
-
-/*contact page style*/
-#contact-section{
-   
-    width: 100%;
-    overflow: hidden;
-    display: block;
-   
-}
-
 /* style for correct and incorrect answer */
 .correct {
     background-color: #80f374;
@@ -125,6 +118,15 @@ header{
 .incorrect {
     background-color: #ff8066;
     color: #fff;
+}
+
+/*contact page style*/
+#contact-section{
+   
+    width: 100%;
+    overflow: hidden;
+    display: block;
+   
 }
 /*form cover content style*/
 #cover-contact{
