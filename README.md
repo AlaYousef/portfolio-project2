@@ -29,7 +29,6 @@ Welcome to the journey through <a href="https://alayousef.github.io/Portfolio-pr
          
             
     * [**Contact Us Page**](<#contact-us-page>)
-       * Contact details
     
     * [**Future Features**](<#future-features>)
 
@@ -133,6 +132,11 @@ The Prophets History Quiz is set up to be simple, clear and easy to use. It cont
 
 ![Contact Us page image](assets/documentation/confirmation.png)
 
+* This page has home icon that allow the user to click on it and navigate to home page.
+
+![Contact Us page image](assets/documentation/contact-home.png)
+
+
 [Back to top](<#contents>)
 
 
@@ -144,8 +148,10 @@ The Prophets History Quiz is set up to be simple, clear and easy to use. It cont
 [Back to top](<#contents>)
 
 # Technologies Used
+
 * [HTML5](https://html.spec.whatwg.org/) - provides the content and structure for the website.
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - styling html pages.
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript) - scripting language that enables users to create dynamically updating content
 * [Gitpod](https://www.gitpod.io/#get-started) - used to deploy the website.
 * [Github](https://github.com/) - used to host and edit the website.
 
@@ -169,15 +175,15 @@ The project was deployed to GitHub pages by these steps:
 
 ![GitHub pages deployed image](assets/documentation/deployment.png)
 
-  The live link to the Github repository can be found here - https://alayousef.github.io/Portfolio-project1/
+  The live link to the Github repository can be found here - https://alayousef.github.io/portfolio-project2/
 
 ### Local Development
 
 #### How to Fork
-To fork the Arabic Book Fair repository:
+To fork the The Prophets History Quiz repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, [AlaYousef/Portfolio-project1](https://github.com/AlaYousef/Portfolio-project1)
+2. Go to the repository for this project, [AlaYousef/Portfolio-project1](https://github.com/AlaYousef/portfolio-project2)
 3. Click the Fork button in the top right corner.
 
 
@@ -185,7 +191,7 @@ To fork the Arabic Book Fair repository:
 The method from cloning a project from GitHub is below:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, [AlaYousef/Portfolio-project1](https://github.com/AlaYousef/Portfolio-project1)
+2. Go to the repository for this project, [AlaYousef/Portfolio-project2](https://github.com/AlaYousef/portfolio-project2)
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
@@ -198,17 +204,18 @@ The method from cloning a project from GitHub is below:
 ### Content
 
 * The font is from [Google Fonts](https://fonts.google.com/).
-* The map is embedded from [Google Maps](https://www.google.com/maps).
 * The colour palate was compiled by [Muzli Colors](https://colors.muz.li/).
 * The icons came from [Font Awesome](https://fontawesome.com/).
 * The form validation idea came from [Code institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+HE101+2020/courseware/fcc67a894619420399970ae84fc4802f/05a72bc3e032457d8a3d108d33656c72/).
-* Background animation idea came from [W3Schools](https://www.w3schools.com/css/css3_animations.asp).
-* In writing readme file, the readme file template was used from this repository on [GitHub](https://github.com/kera-cudmore/love-maths/blob/main/README.md).
+* The inspiration of the quiz idea and design is from this repository [GitHub](https://github.com/mristimaki/ilmQuiz).
+* The confirmation message idea is from this project [JavaScript project](https://mykki92.github.io/CI_PP2_BRAIN_GAMES/index.html).
+* The confirmation message code and library link is from [geeksforgeeks](https://www.geeksforgeeks.org/how-to-create-customizable-alerts-in-javascript/).
+* The javascript code help is from [Youtube](https://www.bing.com/videos/search?q=quize+game+js&docid=603482710871980233&mid=98A011195DE149ABAAA498A011195DE149ABAAA4&view=detail&FORM=VIRE). And from this repository [GitHub](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode).
+
 
 
 ### Media
-* The images of home, about us, contact us pages backgrounds came from ,[Pixel](https://www.pexels.com/search/pixel/).
-* The images of publishers page links came from [ArabiskaBazar](https://arabiskabazar.se/).
+* The faveicon image if from [Pixel](https://www.pexels.com/search/pixel/).
 
 [Back to top](<#contents>)
 
