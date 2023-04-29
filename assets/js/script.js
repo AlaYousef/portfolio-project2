@@ -1,6 +1,8 @@
+/*jshint esversion: 6 */
 
 /**
- * questions and answers array
+ * questions and answers array, each array index is an object with 2 properties(question and option).
+ * The first property is a string, and the second os an array of objects(option,answer)
  */
 let myQuestions = [
     {
@@ -91,7 +93,7 @@ let myQuestions = [
             {option: 'Gregorian Calendar', answer: false},
             {option: 'Roman Calendar', answer: false},
             {option: 'Hijrah', answer: true},
-            {option: 'Persian Calendar', answer: true}
+            {option: 'Persian Calendar', answer: false}
         ],
     }];
 
@@ -104,27 +106,31 @@ let quizOption = document.getElementsByClassName('option-number');
 let quizInfo = document.getElementById('quiz-info');
 let quiz = document.getElementById('quiz-questions');
 let next = document.getElementById('next');
-let previous = document.getElementById('previuos');
 let totalScore = document.getElementById('total-score');
 let playAgain = document.getElementById('again-quiz');
 let result = document.getElementById('result');
 let score = document.getElementById('score');
 let scoreArea = document.getElementById('score-area');
-let correctAns = 0;
-let incorrect = 0;
+let nextPrevious = document.getElementById('next-previous');
 let currentQuestion = 0;
 
-let nextPrevious = document.getElementById('next-previous');
-
-
+/* 
+ * call the function startQuiz when start button is clicked
+ */
 start.addEventListener('click', startQuiz);
+/* 
+ * call the function displayQuestion when next button is clicked
+ */
 next.addEventListener('click', displayQuestion);
+/* 
+ * call the function playAgainFunction when playAgain button is clicked
+ */
 playAgain.addEventListener('click', playAgainFunction);
 
 
 /* 
- * hide quiz and result area when window is loaded and 
- * display the score-area
+ * display quiz information and hide quiz questions and result when window
+is loaded.
  */
 window.onload = function startPage() {
    
@@ -136,7 +142,9 @@ window.onload = function startPage() {
     scoreArea.style.display = 'none';
 };
 
-
+/* 
+ * function that display quiz questions and next button when the start button is clicked.
+ */
 function startQuiz(){
     start.style.display = 'none';
     quizInfo.style.display = 'none';
@@ -148,20 +156,11 @@ function startQuiz(){
     score = 0;
 
    
-displayQuestion();
- 
-    
+    displayQuestion();
 }
-function displayQuestion1(){
-    quizQuestion.innerHTML = myQuestions[0].question;
-   
-     for (let i = 0; i < 4; i++) {
-        let btn = quizOption[i];
-        btn.innerHTML = myQuestions[0].options[i].option;
-    }
-    
-}
-
+/* 
+ * function that display quiz questions from array one after the other the user click on next button 
+ */
 function displayQuestion(){
    
     for(let i = 0; i <= currentQuestion;i++){
@@ -171,15 +170,16 @@ function displayQuestion(){
         for (let j = 0; j < 4; j++) {
             let btn = quizOption[j];
             btn.innerHTML = myQuestions[i].options[j].option;
-             //remove class when next question displays
-             console.log( btn.innerHTML  );
+             //remove incorrect class when next question displays
+             console.log( btn.innerHTML );
             if (btn.classList.contains('incorrect')) {
                 btn.classList.remove('incorrect');
             }
-
+            //remove correct class when next question displays
             if (btn.classList.contains('correct')) {
                 btn.classList.remove('correct');
             }
+
         }
         
     enableOptions();
@@ -201,33 +201,38 @@ function displayQuestion(){
     }
     
 }
+/* 
+ * function that load the index page to start the quiz from the beginning 
+ */
 function playAgainFunction(){
   
     window.location.assign("index.html");
 }
 
 /**
- * function to check if user has clicked the true/false option
+ * Add an event listener for each option when clicked to call checkAnswer function that check the option.
  */
 const choices = document.querySelectorAll('.option-number');
 choices.forEach(choice => choice.addEventListener('click', checkAnswer));
-
+/**
+ * function to check if user has clicked the true/false option
+ */
 function checkAnswer() {
 
     let correctAnswer = myQuestions[currentQuestion-1].options.find(element => element.answer === true);
-        //checks if answer is true or false as well as updating score
+        //checks if answer is true or false and updating score at the same time
         if (correctAnswer.option === this.innerText){
-            //add class if correct
+            //add class (green color) if correct
             this.classList.add('correct');
             incrementScore();
             
         } else {
-            //add class if incorrect
+            //add class (red color) if incorrect
             this.classList.add('incorrect');
             incrementWrongAnswer();
         }
     
-    
+         disableOptions();
 }
 
 /**
@@ -240,6 +245,18 @@ function enableOptions(){
     document.getElementById('option3').style.pointerEvents = 'all';
     document.getElementById('option4').style.pointerEvents = 'all';
    
+}
+
+/**
+ * function that disable options when one is clicked
+ */
+function disableOptions() {
+
+    document.getElementById('option1').style.pointerEvents = 'none';
+    document.getElementById('option2').style.pointerEvents = 'none';
+    document.getElementById('option3').style.pointerEvents = 'none';
+    document.getElementById('option4').style.pointerEvents = 'none';
+
 }
 
 /**
@@ -264,26 +281,6 @@ function incrementWrongAnswer() {
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
     
-}
-/**
- * function to go to next question and at end of game, displays the result area
- * and play again-button
- */
-
-function nextQuestion(currentQuestion) {
-
-    
-}
-/**
- * function that disable options when one is clicked
- */
-function disable() {
-
-    document.getElementById('option1').style.pointerEvents = 'none';
-    document.getElementById('option2').style.pointerEvents = 'none';
-    document.getElementById('option3').style.pointerEvents = 'none';
-    document.getElementById('option4').style.pointerEvents = 'none';
-
 }
 
 
