@@ -15,12 +15,9 @@ function handleSubmit(event){
 
     
     form.reset();
-
-    
-   
 }
 /**
  * function to empty the form fields */
 function reset(){
-    document.getElementById('full-name').innerText = "";
+    document.getElementById('full-name').innerText = " ";
 }
