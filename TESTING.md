@@ -7,10 +7,6 @@ The HTML validator results for all pages are below:
 
 ![W3C Validator test result](assets/documentation/html-validator.png)
 
-After fixing:
-
-![W3C Validator test result](assets/documentation/html-after-fixing.png)
-
 The CSS validator results are below:
 
 ![Jigsaw CSS Validator test result](assets/documentation/css-validator.png)
