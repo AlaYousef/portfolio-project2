@@ -1,5 +1,5 @@
 # **The Prophets History Quiz**
-Thaqafa Quiz is quiz dedicated to prophets, perhaps you simply want to find out more about prophets. We think you’ll find this quiz interesting and enjoyable.
+ The Prophets History Quiz is quiz dedicated to prophets, perhaps you simply want to find out more about prophets. We think you’ll find this quiz interesting and enjoyable.
 We have focussed mainly on the prophets from Qur’an, but have also added  more questions about Islam in order to get simple understanding of Islam. 
 This Quiz consistes of 10 questions, each question has one correct answer with one point for each one, So you will get your total score from 10 at the end. 
 
@@ -202,7 +202,7 @@ The Prophets History Quiz is set up to be simple, clear and easy to use. It cont
 
 # Testing
 
-Please refer [**_here_**](TESTING.md) for more information on testing Wawas Woods.
+Please refer [**_here_**](TESTING.md) for more information on testing The Prophets History Quiz.
 
 [Back to top](<#contents>)
 
@@ -257,9 +257,12 @@ The method from cloning a project from GitHub is below:
 
 
 ### Media
-* The faveicon image if from [Pixel](https://www.pexels.com/search/pixel/).
+* The favicon image is from [Pixel](https://www.pexels.com/search/pixel/).
 
 [Back to top](<#contents>)
 
+# Acknowledgements
+The site was completed as a Portfolio Project 2 for the Full Stack Software Developer Diploma at the [Code Institute](https://codeinstitute.net/). I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/), the Slack community, tutor support. And all at the Code Institute for their help.
 
+[Back to top](<#contents>)
 
