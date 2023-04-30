@@ -141,7 +141,7 @@ The Prophets History Quiz is set up to be simple, clear and easy to use. It cont
   * ### Score tracking system
     * A score tracking system which lets the user know the how many scores for each correct and incorrect answers.  
 
-![Score area image](assets/documentation/scores.png)
+![Score area image](assets/documentation/scores.jpg)
 [Back to top](<#contents>)
 
 
@@ -176,7 +176,7 @@ The Prophets History Quiz is set up to be simple, clear and easy to use. It cont
 
 * This page has home icon that allow the user to click on it and navigate to home page.
 
-![Contact Us page image](assets/documentation/contact-home.png)
+![Contact Us page image](assets/documentation/contact-home.jpg)
 
 
 [Back to top](<#contents>)
