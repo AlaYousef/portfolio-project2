@@ -202,7 +202,7 @@ The Prophets History Quiz is set up to be simple, clear and easy to use. It cont
 
 # Testing
 
-Please refer [**_here_**](TESTING.md) for more information on testing The Prophets History Quiz.
+Please refer to [**_here_**](TESTING.md) for more information on testing The Prophets History Quiz.
 
 [Back to top](<#contents>)
 

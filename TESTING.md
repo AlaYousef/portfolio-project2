@@ -5,7 +5,7 @@ The Prophets History Quiz site code has been tested. All pages has been run thro
 
 The HTML validator results for all pages are below:
 
-![W3C Validator test result](assets/documentation/html-validator.png)
+![W3C Validator test result](assets/documentation/html-after-fixing.png)
 
 After fixing:
 
