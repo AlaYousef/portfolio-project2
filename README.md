@@ -12,10 +12,10 @@ Welcome to the journey through <a href="https://alayousef.github.io/Portfolio-pr
 
 ## CONTENTS
 * [**User Experience UX**](<#user-experience-ux>)
-    *  [User Stories](<#user-stories>)
-    *  [Site Owner](<#site-owner>)
-    * [Wireframes](<#wireframes>)
-    * [Site Structure](<#site-structure>)
+    *  [**User Stories**](<#user-stories>)
+    *  [**Site Owner**](<#site-owner>)
+    * [**Wireframes**](<#wireframes>)
+    * [**Site Structure**](<#site-structure>)
     
 * [**Design**](#design)
   * [**Colour Scheme**](#colour-scheme)
