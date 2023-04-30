@@ -11,7 +11,12 @@ Welcome to the journey through <a href="https://alayousef.github.io/Portfolio-pr
 ---
 
 ## CONTENTS
-
+* [**User Experience UX**](<#user-experience-ux>)
+    *  [User Stories](<#user-stories>)
+    *  [Site Owner](<#site-owner>)
+    * [Wireframes](<#wireframes>)
+    * [Site Structure](<#site-structure>)
+    
 * [**Design**](#design)
   * [**Colour Scheme**](#colour-scheme)
   * [**Typography**](#typography)
@@ -47,7 +52,44 @@ Welcome to the journey through <a href="https://alayousef.github.io/Portfolio-pr
 
 ---
 
+# User Experience (UX)
 
+## User Stories
+
+* As a first time user,  I want the site to be easy to navigate through the whole site.
+* As a first time user,  I want to understand the purpose of the site upon loading it.
+* As a first time user,  I want to navigate from one question to another smoothly.
+* As a first time user,  I want to know through the quiz if my answer is correct or not.
+* As a first time user,  I want to know the final result after finishing the quiz.
+* As a first time user,  I want to have the option to send a feedback smoothly and get a confirmation that my message was sent successfully.
+
+
+[Back to top](<#contents>)
+
+
+## Site Owner
+
+* As the site owner, I want users to be able to feel comfortable while interacting with the site.
+* As the site owner, I want users to be come back to the site.
+* As the site owner, I want users to feedback their experience with the site and send ideas for further future development.
+
+[Back to top](<#contents>)
+
+## Wireframes
+
+The wireframes for the site were produced in [Balsamiq](https://balsamiq.com). There are frames for a full width display and a small mobile device. The final site varies slightly from the wireframes due to developments that occured during the creation process. 
+
+![Desktop wireframe image](assets/readme-images/desktop-wireframes.png)
+
+![Mobile wireframe image](assets/readme-images/mobile-wireframes.png) 
+
+[Back to top](<#contents>)
+
+## Site Structure
+
+The Prophets History Quiz has two pages. The [home page](index.html) is the default page, and [contact](contact.html) page where the user can send a feedback about his experience. The link of the contact page will display at the end of quiz where users need to contact with a anyone who is responsible for the site to send any new ideas or feedback about his experience. There is a link to the home page from the contact page by a home icon at the top right corner of contact page.
+
+[Back to top](<#contents>)
 ## Design
 
 ### Colour Scheme
