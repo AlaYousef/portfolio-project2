@@ -90,5 +90,4 @@ The Prophets History Quiz was also tested using [Google Lighthouse](https://deve
     
 
 * ### Unresolved
-    * Defficulties of displaying questions from array. Until now the last question (number 10) is not displaying on questions div.
-    * The last question (number 10) could not display on questions div.
+    * the background color does not change as expected for screens with max width 550px:

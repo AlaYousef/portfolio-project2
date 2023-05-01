@@ -191,20 +191,17 @@ function displayQuestion(){
         currentQuestion++;
     }
    if(currentQuestion === 10){
-        document.getElementById("next").onclick = function() {displayResult()};
+        document.getElementById("next").onclick = function() {
+            quiz.style.display = 'none';
+            result.style.display = 'contents';
+            totalScore.style.display = 'contents';
+            nextPrevious.style.display = 'none';
+            scoreArea.style.display = 'none';
+            playAgain.style.display = 'contents';
+        };
 
     }
-        
-}
 
-function displayResult(){
-        quiz.style.display = 'none';
-        result.style.display = 'contents';
-        totalScore.style.display = 'contents';
-        nextPrevious.style.display = 'none';
-        scoreArea.style.display = 'none';
-        playAgain.style.display = 'contents';
-}
 /**
  * Add an event listener for each option when clicked to call checkAnswer function that check the option.
  */
