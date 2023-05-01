@@ -5,7 +5,11 @@ The Prophets History Quiz site code has been tested. All pages has been run thro
 
 The HTML validator results for all pages are below:
 
+<<<<<<< HEAD
 ![W3C Validator test result](assets/documentation/html-after-fixing.png)
+=======
+![W3C Validator test result](assets/documentation/html-validator.png)
+>>>>>>> origin
 
 The CSS validator results are below:
 
@@ -59,4 +63,8 @@ The Prophets History Quiz was also tested using [Google Lighthouse](https://deve
 
 
 * ### Unresolved
+<<<<<<< HEAD
     * Defficulties of displaying questions from array. Until now the last question (number 10) is not displaying on questions div.
+=======
+    * The last question (number 10) could not display on questions div.
+>>>>>>> origin
