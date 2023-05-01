@@ -59,4 +59,4 @@ The Prophets History Quiz was also tested using [Google Lighthouse](https://deve
 
 
 * ### Unresolved
-    * Defficulties of displaying the questions from array.  .
+    * Defficulties of displaying questions from array. Until now the last question (number 10) is not displaying on questions div.

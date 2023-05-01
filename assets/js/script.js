@@ -171,7 +171,6 @@ function displayQuestion(){
             let btn = quizOption[j];
             btn.innerHTML = myQuestions[i].options[j].option;
              //remove incorrect class when next question displays
-             console.log( btn.innerHTML );
             if (btn.classList.contains('incorrect')) {
                 btn.classList.remove('incorrect');
             }
@@ -182,26 +181,32 @@ function displayQuestion(){
 
         }
         
-    enableOptions();
-       
-       
+    enableOptions();       
     }
    
     if(currentQuestion <= 9){
-        currentQuestion = currentQuestion + 1;
+        currentQuestion++;
+        console.log("thiss is "+currentQuestion);
     }
-
-    if(currentQuestion === 10){
-            quiz.style.display = 'none';
-            result.style.display = 'contents';
-            totalScore.style.display = 'contents';
-            nextPrevious.style.display = 'none';
-            scoreArea.style.display = 'none';
-            playAgain.style.display = 'contents';
-    }
+   if(currentQuestion === 10){
+         quiz.style.display = 'contents';
+       
+        nextPrevious.style.display = 'contents';
+        scoreArea.style.display = 'contents';
+   
+        
+        }
+        
     
 }
-
+function displayResult(){
+        quiz.style.display = 'none';
+        result.style.display = 'contents';
+        totalScore.style.display = 'contents';
+        nextPrevious.style.display = 'none';
+        scoreArea.style.display = 'none';
+        playAgain.style.display = 'contents';
+}
 /**
  * Add an event listener for each option when clicked to call checkAnswer function that check the option.
  */
