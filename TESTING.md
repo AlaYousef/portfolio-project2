@@ -7,10 +7,6 @@ The HTML validator results for all pages are below:
 
 ![W3C Validator test result](assets/documentation/html-after-fixing.png)
 
-After fixing:
-
-![W3C Validator test result](assets/documentation/html-after-fixing.png)
-
 The CSS validator results are below:
 
 ![Jigsaw CSS Validator test result](assets/documentation/css-validator.png)
@@ -48,19 +44,19 @@ The Prophets History Quiz was also tested using [Google Lighthouse](https://deve
 ## Known Bugs
 * ### Resolved
 
-     During validation one bug and two warnings shown during the validation stage of HTML page,which is:
+     * During validation one bug and two warnings shown during the validation stage of HTML page,which are:
     
-![W3C HTML validator test result](assets/documentation/html-after-fixing.png)
+![W3C HTML validator test result](assets/documentation/html-validator.png)
 
-     During programming one problem was found on index page which is all divs displays at the same time after I added the Javascript function (handleSubmit function) in Javascript file. Which is: 
+     * During programming one problem was found on index page which is all divs displays at the same 
+     time after I added the Javascript function (handleSubmit function) in Javascript file. Which is: 
     
-    ![W3C HTML validator test result](assets/documentation/js-bug.png)
+![W3C HTML validator test result](assets/documentation/js-bug.png)
     
-     The solution was is to split Javascript functions for each page from each other into two seperate js files.
+     * The solution was is to split Javascript functions for each page from each other into two seperate js files.
     
-    
-![W3C HTML validator test result](assets/documentation/html-after-fixing.png)
+ 
 
 
 * ### Unresolved
-    * The last question (number 10) could not display on questions div.
+    * Defficulties of displaying the questions from array.  .

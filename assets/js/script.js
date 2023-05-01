@@ -201,13 +201,6 @@ function displayQuestion(){
     }
     
 }
-/* 
- * function that load the index page to start the quiz from the beginning 
- */
-function playAgainFunction(){
-  
-    window.location.assign("index.html");
-}
 
 /**
  * Add an event listener for each option when clicked to call checkAnswer function that check the option.
@@ -281,6 +274,13 @@ function incrementWrongAnswer() {
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
     
+}
+/* 
+ * function that load the index page to start the quiz from the beginning 
+ */
+function playAgainFunction(){
+  
+    window.location.assign("index.html");
 }
 
 
