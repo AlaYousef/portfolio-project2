@@ -189,11 +189,12 @@ function displayQuestion(){
         console.log("thiss is "+currentQuestion);
     }
    if(currentQuestion === 10){
-         quiz.style.display = 'contents';
-       
-        nextPrevious.style.display = 'contents';
-        scoreArea.style.display = 'contents';
-   
+    quiz.style.display = 'none';
+    result.style.display = 'contents';
+    totalScore.style.display = 'contents';
+    nextPrevious.style.display = 'none';
+    scoreArea.style.display = 'none';
+    playAgain.style.display = 'contents';
         
         }
         

@@ -357,19 +357,25 @@ button {
 /* --------- Media queries for screens with max width 550px */
 @media (max-width: 550px) {
     /* index.html style */
+    main{
+        max-width: 90%;
+    }
     header{
         font-size: smaller;
     }
     #questions-container {
-        width:90%;
+        width: 300px;
         align-items: center;
         margin: 0 auto;
-        overflow:scroll;
+        overflow: scroll;
         padding: 0 5px 0 5px;
         font-size: smaller;
         margin-top: 30px;
         overflow: scroll;
+        /* max-width: 90vw; */
+        height: auto;
     }
+
     #quiz-questions p {
         font-size: small;
     }
@@ -381,26 +387,26 @@ button {
         
     }
     #start-quiz{
-        width:90%;
+        width: 300px;
         margin: 0 auto;
         margin-top: 30px;
         font-size: medium;
     }
     #next-previous p{
-        width:90%;
+        width:300px;
         margin: 0 auto;
         margin-top: 30px;
         font-size: medium;
     }
     #again-quiz p{
-        width:90%;
+        width:300px;
         margin: 0 auto;
         margin-top: 30px;
         font-size: medium;
         
     }
     #total-score{
-        width:90%;
+        width: 300px;
         margin: 0 auto;
         margin-top: 20px;
     }
