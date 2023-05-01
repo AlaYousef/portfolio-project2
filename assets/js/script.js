@@ -183,19 +183,17 @@ function displayQuestion(){
             }
 
         }
-        
+        console.log(quizQuestion.innerHTML);   
     enableOptions();       
     }
    
     if(currentQuestion <= 9){
         currentQuestion++;
-        console.log("thiss is "+currentQuestion);
     }
-   if(currentQuestion === 11){
-        displayResult();
+   if(currentQuestion === 10){
+        document.getElementById("next").onclick = function() {displayResult()};
+
     }
-        
-    
         
 }
 
