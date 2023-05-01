@@ -143,7 +143,7 @@ window.onload = function startPage() {
 };
 
 /* 
- * function that display quiz questions and next button when the start button is clicked.
+ * function that display quiz questions div and the next button when the start button is clicked.
  */
 function startQuiz(){
     start.style.display = 'none';
@@ -159,7 +159,7 @@ function startQuiz(){
     displayQuestion();
 }
 /* 
- * function that display quiz questions from array one after the other the user click on next button 
+ * function that display quiz questions from array one after the other once the user click on next button 
  */
 function displayQuestion(){
    
@@ -201,6 +201,7 @@ function displayQuestion(){
         };
 
     }
+}
 
 /**
  * Add an event listener for each option when clicked to call checkAnswer function that check the option.
