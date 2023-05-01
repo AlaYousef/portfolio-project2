@@ -178,6 +178,9 @@ function displayQuestion(){
             if (btn.classList.contains('correct')) {
                 btn.classList.remove('correct');
             }
+            if(currentQuestion === 10){
+
+            }
 
         }
         
@@ -188,18 +191,14 @@ function displayQuestion(){
         currentQuestion++;
         console.log("thiss is "+currentQuestion);
     }
-   if(currentQuestion === 10){
-    quiz.style.display = 'none';
-    result.style.display = 'contents';
-    totalScore.style.display = 'contents';
-    nextPrevious.style.display = 'none';
-    scoreArea.style.display = 'none';
-    playAgain.style.display = 'contents';
-        
-        }
+   if(currentQuestion === 11){
+        displayResult();
+    }
         
     
+        
 }
+
 function displayResult(){
         quiz.style.display = 'none';
         result.style.display = 'contents';

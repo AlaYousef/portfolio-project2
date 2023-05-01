@@ -14,8 +14,7 @@ Welcome to the journey through <a href="https://alayousef.github.io/Portfolio-pr
 * [**User Experience UX**](<#user-experience-ux>)
     *  [**User Stories**](<#user-stories>)
     *  [**Site Owner**](<#site-owner>)
-    * [**Wireframes**](<#wireframes>)
-    * [**Site Structure**](<#site-structure>)
+    *  [**Site Structure**](<#site-structure>)
     
 * [**Design**](#design)
   * [**Colour Scheme**](#colour-scheme)
@@ -72,16 +71,6 @@ Welcome to the journey through <a href="https://alayousef.github.io/Portfolio-pr
 * As the site owner, I want users to be able to feel comfortable while interacting with the site.
 * As the site owner, I want users to be come back to the site.
 * As the site owner, I want users to feedback their experience with the site and send ideas for further future development.
-
-[Back to top](<#contents>)
-
-## Wireframes
-
-The wireframes for the site were produced in [Balsamiq](https://balsamiq.com). There are frames for a full width display and a small mobile device. The final site varies slightly from the wireframes due to developments that occured during the creation process. 
-
-![Desktop wireframe image](assets/readme-images/desktop-wireframes.png)
-
-![Mobile wireframe image](assets/readme-images/mobile-wireframes.png) 
 
 [Back to top](<#contents>)
 
