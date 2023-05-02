@@ -90,4 +90,4 @@ The Prophets History Quiz was also tested using [Google Lighthouse](https://deve
     
 
 * ### Unresolved
-    * the background color does not change as expected for screens with max width 550px:
+    * The background color for each option does not change as expected when it is clicked and that happens for screens with max width 550px.

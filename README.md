@@ -1,5 +1,5 @@
 # **The Prophets History Quiz**
- The Prophets History Quiz is quiz dedicated to prophets, perhaps you simply want to find out more about prophets. We think you’ll find this quiz interesting and enjoyable.
+ The Prophets History Quiz is a quiz dedicated to prophets, perhaps you simply want to find out more about prophets. We think you’ll find this quiz interesting and enjoyable.
 We have focussed mainly on the prophets from Qur’an, but have also added  more questions about Islam in order to get simple understanding of Islam. 
 This Quiz consistes of 10 questions, each question has one correct answer with one point for each one, So you will get your total score from 10 at the end. 
 
@@ -83,20 +83,20 @@ The Prophets History Quiz has two pages. The [home page](index.html) is the defa
 
 ### Colour Scheme
 
-The colour scheme which chosen is one based violett, bright orange and white for texts. These colors are compatible with each other which are consistent in style and colour and at the same time create contrast between background and foreground colours.
+The colour scheme which chosen is one based violett for main background and body text, bright orange for divs background and white for header text. These colors are compatible with each other which are consistent in style and colour and at the same time create contrast between background and foreground colours.
 
 ![Colour Palate image](assets/documentation/colour-pallet.png)
 [Back to top](<#contents>)
 
 ### Typography
-The fonts chosen were 'Instrument Serif' with weight 400 Regular style for the heading. This font is attractive., so it is appropriate for but not easy to read for the body text. So the body text has  the default font  that the browser has.This font is imported from [Google Fonts](https://fonts.google.com/specimen/Instrument+Serif/)
+The fonts chosen were 'Instrument Serif' with weight 400 Regular style for the heading. This font is attractive, so it is appropriate but not easy to read for the body text. So the body text has the default font that the browser has. This font is imported from [Google Fonts](https://fonts.google.com/specimen/Instrument+Serif/)
 
 [Back to top](<#contents>)
 
 ---
 
 # Features
-The Prophets History Quiz is set up to be simple, clear and easy to use. It contains many features that the user probably need such as a navigation bar, contact form and most importantly, the information that user is looking for will be found once he opens the site. The goal in general is to let the user feel comfortable and lucidity that what he want to know is exist in the site, clear, understandable and can obtain easily.
+The Prophets History Quiz is set up to be simple, clear and easy to use. It contains many features that the user probably need such as a navigation buttons, contact form. The goal in general is to let the user feel comfortable and lucidity  about what the site and how easy it is to deal with it.
 
 ## Existing Features  
   * ### start page
@@ -128,7 +128,7 @@ The Prophets History Quiz is set up to be simple, clear and easy to use. It cont
 [Back to top](<#contents>)
 
   * ### Score tracking system
-    * A score tracking system which lets the user know the how many scores for each correct and incorrect answers.  
+    * A score tracking system which lets the user knows how many scores for each correct and incorrect answers he gets.  
 
 ![Score area image](assets/documentation/scores.jpg)
 [Back to top](<#contents>)
