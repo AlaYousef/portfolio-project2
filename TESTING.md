@@ -87,7 +87,7 @@ The Prophets History Quiz was also tested using [Google Lighthouse](https://deve
      ![W3C HTML validator test result](assets/documentation/js-bug.png)
 
      * The solution was is to split Javascript functions for each page from each other into two seperate javascript files.
-    
+     * Uncaught ReferenceError: undefied question. The error is solved by addning an if statement to check if the current question is the last one to break (stop the loop).
 
 * ### Unresolved
     * The background color for each option does not change as expected when it is clicked and that happens for screens with max width 550px.

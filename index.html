@@ -19,7 +19,6 @@
 
     <!--main section that contain the game-->
     <main>
-
         <!--quiz container, that contains quiz informaion div, 
             that changed to quiz questions div after click on 
             start quiz button. Finally the result div that display after finishing quiz -->
@@ -39,22 +38,20 @@
             <!--quiz questions div-->
             <div id="quiz-questions">
                 <p  id="question-number">1.question?</p>
-                <p  id="option1" class="option-number" style="cursor: pointer;" onclick="disable()">option1</p>
-                <p  id="option2" class ="option-number" style="cursor: pointer;" onclick="disable()">option2</p>
-                <p  id="option3" class="option-number" style="cursor: pointer;" onclick="disable()">option3</p>
-                <p  id="option4" class="option-number" style="cursor: pointer; margin-bottom: 13px;" onclick="disable()">option4</p>
-
+                <p  id="option1" class="option-number" style="cursor: pointer;" >option1</p>
+                <p  id="option2" class ="option-number" style="cursor: pointer;" >option2</p>
+                <p  id="option3" class="option-number" style="cursor: pointer;" >option3</p>
+                <p  id="option4" class="option-number" style="cursor: pointer; margin-bottom: 13px;" >option4</p>
             </div>
             <!--quiz final result div-->
             <div id="result" >
-               <p> " You have finished the quiz <i class="fa-solid fa-thumbs-up"></i> Your score is <br> ( 
+                <p> " You have finished the quiz <i class="fa-solid fa-thumbs-up"></i> Your score is <br> ( 
                      <span id="total-score"> 0 </span> / 10 ) " 
                      <br> Your feedback is important to us! You can send it from the link below   <br>
-                     <a href="contact.html" target="_blank"><i class="fa-solid fa-envelope fa-beat"></i> Contact</a></p>
+                     <a href="contact.html" target="_blank"><i class="fa-solid fa-envelope fa-beat"></i> Contact</a>
+                </p>
             </div>
-
         </div>
-
         <!--section contains 4 divs, The first 3 divs are changing 
             from one to another according to the action that the user take. 
             First it displays start div(start quiz). after that it changes 
@@ -71,11 +68,7 @@
                 <p class="scores">Correct Answers: <span id="score">0</span></p>
                 <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
             </div>
-
         </div>
-
-
-        
     </main>
     <!--Javascript file-->
    <script src="assets/js/script.js"></script> 

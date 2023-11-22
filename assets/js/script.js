@@ -113,6 +113,7 @@ let score = document.getElementById('score');
 let scoreArea = document.getElementById('score-area');
 let nextPrevious = document.getElementById('next-previous');
 let currentQuestion = 0;
+let choice = false;
 
 /* 
  * call the function startQuiz when start button is clicked
@@ -126,14 +127,11 @@ next.addEventListener('click', displayQuestion);
  * call the function playAgainFunction when playAgain button is clicked
  */
 playAgain.addEventListener('click', playAgainFunction);
-
-
 /* 
  * display quiz information and hide quiz questions and result when window
 is loaded.
  */
 window.onload = function startPage() {
-   
     quiz.style.display ='none';
     nextPrevious.style.display ='none';
     totalScore.style.display = 'none';
@@ -150,23 +148,26 @@ function startQuiz(){
     quizInfo.style.display = 'none';
     playAgain.style.display = 'none';
     quiz.style.display = 'contents';
-    nextPrevious.style.display ='contents';
+    nextPrevious.style.display ='none';
     scoreArea.style.display = 'contents';
     currentQuestion = 0;
     score = 0;
 
-   
     displayQuestion();
 }
+
+/**
+ * Add an event listener for each option when clicked to call checkAnswer function that check the option.
+ */
+const choices = document.querySelectorAll('.option-number');
+
 /* 
  * function that display quiz questions from array one after the other once the user click on next button 
  */
 function displayQuestion(){
-   
-    for(let i = 0; i <= currentQuestion;i++){
-       
+
+    for(let i = 0; i <= currentQuestion ;i++){
         quizQuestion.innerHTML = myQuestions[i].question;
-       
         for (let j = 0; j < 4; j++) {
             let btn = quizOption[j];
             btn.innerHTML = myQuestions[i].options[j].option;
@@ -178,41 +179,46 @@ function displayQuestion(){
             if (btn.classList.contains('correct')) {
                 btn.classList.remove('correct');
             }
-            if(currentQuestion === 10){
-
-            }
-
+            
         }
-        console.log(quizQuestion.innerHTML);   
-    enableOptions();       
+
+        enableOptions();  
+        choices.forEach(choice => choice.addEventListener('click', checkAnswer));  
+       
+        if(currentQuestion >= myQuestions.length){
+            break;
+        }
+      
+        
     }
+    
+    nextQuestion();
    
-    if(currentQuestion <= 9){
-        currentQuestion++;
-    }
-   if(currentQuestion === 10){
-        document.getElementById("next").onclick = function() {
+}
+
+function nextQuestion() {
+    currentQuestion++;
+    nextPrevious.style.display ='none';
+        if (currentQuestion === myQuestions.length) {
+            document.getElementById("next").onclick = function() {
             quiz.style.display = 'none';
             result.style.display = 'contents';
             totalScore.style.display = 'contents';
             nextPrevious.style.display = 'none';
             scoreArea.style.display = 'none';
             playAgain.style.display = 'contents';
-        };
-
-    }
+            }
+               
+        } 
+       
 }
 
-/**
- * Add an event listener for each option when clicked to call checkAnswer function that check the option.
- */
-const choices = document.querySelectorAll('.option-number');
-choices.forEach(choice => choice.addEventListener('click', checkAnswer));
+
 /**
  * function to check if user has clicked the true/false option
  */
 function checkAnswer() {
-
+   
     let correctAnswer = myQuestions[currentQuestion-1].options.find(element => element.answer === true);
         //checks if answer is true or false and updating score at the same time
         if (correctAnswer.option === this.innerText){
@@ -225,8 +231,15 @@ function checkAnswer() {
             this.classList.add('incorrect');
             incrementWrongAnswer();
         }
-    
+        
          disableOptions();
+         if(choice === true){
+            nextPrevious.style.display ='contents';
+         }
+          else {
+            nextPrevious.style.display ='none';
+          }  
+         choice = false;
 }
 
 /**
@@ -238,18 +251,20 @@ function enableOptions(){
     document.getElementById('option2').style.pointerEvents = 'all';
     document.getElementById('option3').style.pointerEvents = 'all';
     document.getElementById('option4').style.pointerEvents = 'all';
-   
+    choice = true;
 }
 
 /**
  * function that disable options when one is clicked
  */
+
 function disableOptions() {
 
     document.getElementById('option1').style.pointerEvents = 'none';
     document.getElementById('option2').style.pointerEvents = 'none';
     document.getElementById('option3').style.pointerEvents = 'none';
     document.getElementById('option4').style.pointerEvents = 'none';
+    
 
 }
 
