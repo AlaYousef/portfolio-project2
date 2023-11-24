@@ -178,24 +178,21 @@ function displayQuestion(){
             //remove correct class when next question displays
             if (btn.classList.contains('correct')) {
                 btn.classList.remove('correct');
-            }
-            
+            }  
         }
-
         enableOptions();  
         choices.forEach(choice => choice.addEventListener('click', checkAnswer));  
        
         if(currentQuestion >= myQuestions.length){
             break;
         }
-      
-        
     }
-    
     nextQuestion();
-   
 }
 
+/**
+ * function display the next question
+ */
 function nextQuestion() {
     currentQuestion++;
     nextPrevious.style.display ='none';
@@ -207,15 +204,14 @@ function nextQuestion() {
             nextPrevious.style.display = 'none';
             scoreArea.style.display = 'none';
             playAgain.style.display = 'contents';
-            }
-               
+            }    
         } 
-       
 }
 
-
 /**
- * function to check if user has clicked the true/false option
+ * function to check if user has clicked the true/false option,
+ * change the color for option background then check if the user 
+ * choose an option (choice = true) to display the next button.
  */
 function checkAnswer() {
    
@@ -264,8 +260,6 @@ function disableOptions() {
     document.getElementById('option2').style.pointerEvents = 'none';
     document.getElementById('option3').style.pointerEvents = 'none';
     document.getElementById('option4').style.pointerEvents = 'none';
-    
-
 }
 
 /**
@@ -276,10 +270,6 @@ function incrementScore() {
     let oldScore = document.getElementById("score").innerText;
     document.getElementById("score").innerText = ++oldScore;
     document.getElementById("total-score").innerText = oldScore;
-    /*
-     let total = document.getElementById("score").innerText;
-    return total;*/
- 
 }
 
 /**
@@ -289,7 +279,6 @@ function incrementWrongAnswer() {
 
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
-    
 }
 /* 
  * function that load the index page to start the quiz from the beginning 
